@@ -38,7 +38,7 @@
 		</div>
 	</div>
 
-	<div class="flex gap-10 text-lg font-medium">
+	<div class="flex gap-10 text-lg font-semibold">
 		<div>About us</div>
 		<div>Services</div>
 		<div>FAQ</div>

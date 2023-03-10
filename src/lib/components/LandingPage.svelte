@@ -1,7 +1,11 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { draw, fly, scale, slide } from 'svelte/transition';
-	import { backOut } from 'svelte/easing';
+	import { sineInOut, quintIn, backOut } from 'svelte/easing';
+
+	import heroImgBg from '$lib/assets/hero-with-bg.png';
+	import heroImg from '$lib/assets/hero-image-cut.png';
+	import heroSliced from '$lib/assets/hero-sliced-4.png';
 
 	let mountAnimations = false;
 
@@ -26,7 +30,7 @@
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<line
-				in:draw={{ duration: 500 }}
+				in:draw={{ duration: 200, easing: quintIn }}
 				x1="-24.2929"
 				y1="1.29289"
 				x2="182.707"
@@ -44,7 +48,7 @@
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<line
-				in:draw={{ duration: 700 }}
+				in:draw={{ duration: 300, delay: 75, easing: quintIn }}
 				x1="-24.2929"
 				y1="1.29289"
 				x2="182.707"
@@ -62,7 +66,7 @@
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<line
-				in:draw={{ duration: 900 }}
+				in:draw={{ duration: 300, delay: 150, easing: quintIn }}
 				x1="-24.2929"
 				y1="1.29289"
 				x2="182.707"
@@ -75,29 +79,29 @@
 {/if}
 
 {#if mountAnimations}
-	<div class=" flex flex-col font-workSans gap-7 mt-5">
-		<div
-			in:fly={{ duration: 500, delay: 0, easing: backOut, y: 100 }}
-			class="textClamp font-workSans font-bold italic text-white "
-		>
-			Unlocking Your Business's Full Potential
-		</div>
-		<div class="sm:grid sm:grid-cols-2 flex flex-col text-white gap-7 ">
+	<div class=" flex flex-col font-workSans gap-5 mt-5 ">
+		<div class="sm:grid sm:grid-cols-2 flex flex-col text-white gap-5 items-top ">
 			<div class="textSmallClamp flex flex-col  gap-7 ">
-				<div in:fly={{ duration: 500, delay: 200, easing: backOut, y: 100 }}>
+				<div
+					in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
+					class="textClamp font-workSans font-bold italic text-white "
+				>
+					Unlocking Your Business's Full Potential
+				</div>
+				<div in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}>
 					We provide expert guidance to optimize your strategy, operations, and performance driving
 					growth and success.
 				</div>
-				<div in:fly={{ duration: 500, delay: 400, easing: backOut, y: 100 }} class="flex">
+				<div in:fly={{ duration: 300, delay: 150, easing: sineInOut, y: 100 }} class="flex">
 					<div
-						class="bg-secondaryDark  flex  gap-2 justify-center font-bold textSmallClamp px-4 py-3 rounded-lg items-center"
+						class="bg-secondaryDark  flex  gap-1 justify-center font-bold textSmallClamp px-4 py-3 rounded-lg items-center"
 					>
 						<div class="flex">Learn More</div>
 
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
-							viewBox="0 0 24 24"
+							viewBox="0 0 28 20"
 							stroke-width="1.5"
 							stroke="currentColor"
 							class="w-5 h-5 "
@@ -111,19 +115,39 @@
 					</div>
 				</div>
 			</div>
-			<div in:fly={{ duration: 500, delay: 0, easing: backOut, y: 100 }} class="flex">right</div>
+
+			<div class="overflow-hidden ">
+				<img
+					src={heroSliced}
+					alt="business people in a meeting"
+					in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
+					class="flex"
+				/>
+				<!-- <img
+					src={heroImg}
+					alt="business people in a meeting"
+					in:fly={{ duration: 500, delay: 0, easing: sineInOut, y: 100 }}
+					class="flex "
+				/> -->
+			</div>
 		</div>
 	</div>
 {/if}
 
 <style>
+	.roundingClamp {
+		border-radius: clamp(0.2rem, 2vw + 1rem, 7rem);
+	}
+
 	.textClamp {
-		font-size: clamp(0.2rem, 5vw + 0.5rem, 3rem);
+		font-size: clamp(1.7rem, 2.5vw + 0.5rem, 3rem);
 		line-height: normal;
 	}
 
 	.textSmallClamp {
-		font-size: clamp(1rem, 1vw + 0.8rem, 2rem);
+		font-size: clamp(1rem, 0.8vw + 0.4rem, 2.5rem);
 		line-height: normal;
 	}
+
+	/* Picture modified from Rawpixel Ltd on Flickr / 2018. source: https://www.flickr.com/photos/byrawpixel/45739276632/ */
 </style>
