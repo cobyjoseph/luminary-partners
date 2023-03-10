@@ -1,8 +1,14 @@
+<script>
+	import toast_ from 'svelte-french-toast';
+
+	export let toast;
+</script>
+
 <div class=" bg-white overflow-x-auto">
 	<div class="flex   text-xs sm:text-sm py-2 font-semibold 2xl:justify-center 2xl:text-lg">
 		<div class="py-1 px-3 text-secondaryLight  font-bold">LATEST REPORTS</div>
 		<div
-			class="flex flex-col min-w-[10rem] justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px] py-1 px-3  border-l-secondaryLight "
+			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px] py-1 px-3  border-l-secondaryLight "
 		>
 			<div class="flex">Implementing Agile Methodologies</div>
 			<svg
@@ -21,7 +27,7 @@
 		</div>
 
 		<div
-			class="flex flex-col min-w-[10rem] justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
+			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
 		>
 			<div class="flex">Maximizing the Impact of CSR Programs</div>
 			<svg
@@ -40,7 +46,7 @@
 		</div>
 
 		<div
-			class="flex flex-col min-w-[10rem] justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
+			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
 		>
 			<div class="flex">Industry Trends in Supply Chain Management</div>
 			<svg
@@ -59,7 +65,7 @@
 		</div>
 
 		<div
-			class="flex flex-col min-w-[10rem] justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
+			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
 		>
 			<div class="flex">Digital Transformation Strategies for SMEs</div>
 			<svg
@@ -78,7 +84,7 @@
 		</div>
 
 		<div
-			class="flex flex-col min-w-[10rem] justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
+			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
 		>
 			<div class="flex">Optimizing Performance through Cost Reduction</div>
 			<svg
