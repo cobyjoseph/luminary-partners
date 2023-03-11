@@ -79,12 +79,12 @@
 {/if}
 
 {#if mountAnimations}
-	<div class=" flex flex-col font-workSans gap-5 mt-5 ">
+	<div class=" flex flex-col font-satoshi gap-5 mt-5 ">
 		<div class="sm:grid sm:grid-cols-2 flex flex-col text-white gap-5 items-top ">
 			<div class="textSmallClamp flex flex-col  gap-7 ">
 				<div
 					in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
-					class="textClamp font-workSans font-bold italic text-white "
+					class="textClamp font-satoshi font-extrabold italic text-white "
 				>
 					Unlocking Your Business's Full Potential
 				</div>

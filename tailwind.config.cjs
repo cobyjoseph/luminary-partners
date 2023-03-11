@@ -13,7 +13,8 @@ module.exports = {
 			fontFamily: {
 				workSans: ['Work Sans', 'sans'],
 				josefinSans: ['Josefin Sans'],
-				chivo: ['Chivo']
+				chivo: ['Chivo'],
+				satoshi: ['Satoshi', 'sans-serif']
 			}
 		}
 	},

@@ -38,10 +38,36 @@
 		</div>
 	</div>
 
-	<div class="flex gap-10 text-lg font-semibold">
-		<div>About us</div>
-		<div>Services</div>
-		<div>FAQ</div>
-		<div>Contact</div>
+	<div class="flex gap-10 text-lg font-semibold font-satoshi">
+		<div class="fancy-link relative">About us</div>
+		<div class="fancy-link relative">Services</div>
+		<div class="fancy-link relative">FAQ</div>
+		<div class="fancy-link relative">Contact</div>
 	</div>
 </div>
+
+<style>
+	.fancy-link::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background: currentColor;
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		-webkit-transform-origin: right;
+		transform-origin: right;
+		transition: -webkit-transform 250ms ease-in;
+		transition: transform 250ms ease-in;
+		transition: transform 250ms ease-in, -webkit-transform 250ms ease-in;
+	}
+
+	.fancy-link:hover::after {
+		-webkit-transform: scaleX(1);
+		transform: scaleX(1);
+		-webkit-transform-origin: left;
+		transform-origin: left;
+	}
+</style>
