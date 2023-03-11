@@ -2,6 +2,7 @@
 	import Menu from '$lib/components/Menu.svelte';
 	import LandingPage from '$lib/components/LandingPage.svelte';
 	import Reports from '$lib/components/Reports.svelte';
+	import Services from '$lib/components/Services.svelte';
 </script>
 
 <svelte:head>
@@ -20,6 +21,8 @@
 </div>
 
 <Reports />
+
+<Services />
 
 <style>
 	.customHeight {

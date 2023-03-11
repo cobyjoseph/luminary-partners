@@ -32,9 +32,9 @@
 				</g>
 			</svg>
 		</div>
-		<div class="flex flex-col text-2xl font-bold font-josefinSans  ">
-			<div class="flex">Luminary</div>
-			<div class="flex">Partners</div>
+		<div class="flex flex-col text-2xl font-bold font-josefinSans   ">
+			<div class="flex ">Luminary</div>
+			<div class="flex ">Partners</div>
 		</div>
 	</div>
 
