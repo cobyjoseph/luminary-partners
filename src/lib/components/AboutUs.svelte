@@ -39,60 +39,77 @@
 			ability to exceed expectations. Our focus on driving growth for our clients is at the core of
 			our mission, and we work tirelessly to ensure their success.
 		</div>
-		<div>
-			Our team of experts delivers cus tomized solutions tailored to our clients' unique needs and
-			objectives.
-		</div>
 	</div>
 </div>
 
-<div class="flex flex-wrap gap-5 sm:gap-12  justify-between">
-	<div
-		class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex "
-	>
-		<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-		<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-		<img
-			src={photo1}
-			alt="person headshot"
-			class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-		/>
+<div class="flex flex-col sm:flex-row flex-wrap gap-0 sm:gap-12  justify-between font-satoshi">
+	<div class="flex gap-4 items-center sm:flex-col ">
+		<div
+			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
+		>
+			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
+			<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+			<img
+				src={photo1}
+				alt="person headshot"
+				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+			/>
+		</div>
+		<div class="flex flex-col sm:items-center ">
+			<div class="flex text-xl text-white font-bold  ">Sarah Jones</div>
+			<div class="flex text-sm text-white   ">Managing Director</div>
+		</div>
 	</div>
-
-	<div
-		class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex "
-	>
-		<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-		<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-		<img
-			src={photo2}
-			alt="person headshot"
-			class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-		/>
+	<div class="flex gap-4 items-center sm:flex-col">
+		<div
+			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
+		>
+			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
+			<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+			<img
+				src={photo2}
+				alt="person headshot"
+				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+			/>
+		</div>
+		<div class="flex flex-col  sm:items-center ">
+			<div class="flex text-xl text-white font-bold  ">Keisha Davis</div>
+			<div class="flex text-sm text-white   ">Senior Consultant</div>
+		</div>
 	</div>
-
-	<div
-		class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex "
-	>
-		<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-		<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-		<img
-			src={photo3}
-			alt="person headshot"
-			class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-		/>
+	<div class="flex gap-4 items-center sm:flex-col">
+		<div
+			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
+		>
+			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
+			<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+			<img
+				src={photo3}
+				alt="person headshot"
+				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+			/>
+		</div>
+		<div class="flex flex-col sm:items-center">
+			<div class="flex text-xl text-white font-bold  ">Ana Torres</div>
+			<div class="flex text-sm text-white   ">Consultant</div>
+		</div>
 	</div>
-
-	<div
-		class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105  flex"
-	>
-		<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-		<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-		<img
-			src={photo4}
-			alt="person headshot"
-			class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-		/>
+	<div class="flex gap-4 items-center sm:flex-col">
+		<div
+			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
+		>
+			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
+			<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+			<img
+				src={photo4}
+				alt="person headshot"
+				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+			/>
+		</div>
+		<div class="flex flex-col sm:items-center ">
+			<div class="flex text-xl text-white font-bold  ">Matt Walsh</div>
+			<div class="flex text-sm text-white   ">Consultant</div>
+		</div>
 	</div>
 </div>
 
