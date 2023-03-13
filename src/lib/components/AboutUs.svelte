@@ -2,6 +2,12 @@
 	import { draw, fly, scale, slide } from 'svelte/transition';
 	import { sineInOut, quintIn, backOut } from 'svelte/easing';
 	import InView from '$lib/components/InView.svelte';
+
+	import photo1 from '$lib/assets/headshots/photo-1.png';
+	import photo2 from '$lib/assets/headshots/photo-2.png';
+	import photo3 from '$lib/assets/headshots/photo-3.png';
+	import photo4 from '$lib/assets/headshots/photo-4.png';
+	// import texturePhoto from '$lib/assets/patterns/canvas-texture.png';
 </script>
 
 <InView let:isVisible>
@@ -40,11 +46,17 @@
 	</div>
 </div>
 
-<div class="w-[10rem] h-[10rem] outline rounded-full photo1" />
+<div class="backgroundPhotoTexture w-[10rem] h-[10rem]  rounded-full relative overflow-hidden">
+	<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+	<img src={photo1} alt="person headshot" class="aboslute scale-125" />
+</div>
 
 <style>
-	.photo1 {
-		background-image: ;
+	.backgroundPhotoTexture {
+		background-image: url('$lib/assets/patterns/canvas-texture.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
 	}
 
 	.psuedoUnderline::after {
