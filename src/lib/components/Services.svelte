@@ -1,31 +1,35 @@
-<div class="relative heightClass ">
-	<div class="bg-base absolute h-full w-full" />
-
-	<div class=" grid-cols-2 m-auto grid h-full gap-4  z-10 relative outline outline-blue-400">
-		<div class=" ">image here</div>
-		<div class="   justify-center flex flex-col bg-green-400 outline px-8 ">
+<div class="relative heightClass bg-base">
+	<div class=" flex flex-col sm:grid-cols-2 m-auto sm:grid h-full gap-4  z-10 relative">
+		<div class="min-h-[25vh] sm:min-h-0 ">image here</div>
+		<div
+			class="   justify-center flex flex-col bg-green-400 outline sm:px-20 px-[8%] gap-2 min-h-[25vh] sm:min-h-0"
+		>
 			<div class="text-3xl font-satoshi font-extrabold text-primaryDark">
 				Developing a roadmap for success
 			</div>
-			<div class="text-normal font-satoshi font-normal">
+			<div class="text-normal font-satoshi font-normal pr-4 ">
 				Align your business goals, resources, and initiatives to drive growth and profitability.
 			</div>
 		</div>
-		<div class=" outline justify-center flex flex-col px-8">
+		<div class=" sm:hidden min-h-[25vh] sm:min-h-0 ">image here</div>
+
+		<div
+			class=" outline justify-center flex flex-col sm:px-20 px-[8%] gap-2 min-h-[25vh] sm:min-h-0"
+		>
 			<div class="text-3xl font-satoshi font-extrabold text-primaryDark">
-				Streamlining Your business processes
+				Streamlining your business processes
 			</div>
-			<div class="text-normal font-satoshi font-normal">
+			<div class="text-normal font-satoshi font-normal pr-4">
 				Identify inefficiencies, reduce costs, and improve performance with data-driven insights.
 			</div>
 		</div>
-		<div class="  ">image here</div>
+		<div class="hidden sm:block min-h-[25vh] sm:min-h-0 ">image here</div>
 	</div>
 </div>
 
 <style>
 	.heightClass {
-		height: 100vh;
-		height: 100svh;
+		min-height: 100vh;
+		min-height: 100svh;
 	}
 </style>

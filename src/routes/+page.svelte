@@ -3,6 +3,7 @@
 	import LandingPage from '$lib/components/LandingPage.svelte';
 	import Reports from '$lib/components/Reports.svelte';
 	import Services from '$lib/components/Services.svelte';
+	import AboutUs from '$lib/components/AboutUs.svelte';
 </script>
 
 <svelte:head>
@@ -12,7 +13,7 @@
 	/>
 </svelte:head>
 
-<div class="px-[6%] customHeight">
+<div class="px-[8%] customHeight">
 	<Menu />
 
 	<LandingPage />
@@ -23,6 +24,11 @@
 <Reports />
 
 <Services />
+
+<div class="px-[8%] customHeight">
+	<AboutUs />
+	<div class="bg-primaryLight  absolute w-full inset-0 -z-20" />
+</div>
 
 <style>
 	.customHeight {
