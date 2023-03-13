@@ -1,5 +1,5 @@
 <div class="relative heightClass bg-base">
-	<div class=" flex flex-col sm:grid-cols-2 m-auto sm:grid h-full gap-4  z-10 relative">
+	<div class=" flex flex-col sm:grid-cols-2 m-auto sm:grid heightClass gap-4  z-10 relative">
 		<div class="min-h-[25vh] sm:min-h-0 ">image here</div>
 		<div
 			class="   justify-center flex flex-col bg-green-400 outline sm:px-20 px-[8%] gap-2 min-h-[25vh] sm:min-h-0"

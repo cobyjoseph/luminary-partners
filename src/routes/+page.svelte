@@ -17,17 +17,16 @@
 	<Menu />
 
 	<LandingPage />
-
-	<div class="bg-primaryLight  absolute w-full inset-0 -z-20" />
+	<div class="bg-primaryLight  absolute w-full inset-0 -z-20 " />
 </div>
 
 <Reports />
 
 <Services />
 
-<div class="px-[8%] customHeight">
+<div class="px-[8%] customHeight relative">
 	<AboutUs />
-	<div class="bg-primaryLight  absolute w-full inset-0 -z-20" />
+	<div class="bg-primaryLight  absolute w-full inset-0 -z-20 " />
 </div>
 
 <style>

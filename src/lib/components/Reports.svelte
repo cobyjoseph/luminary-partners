@@ -28,7 +28,7 @@
 
 			{#if animateChevron1}
 				<svg
-					in:fly={{ duration: 400, x: -200, y: 0, easing: quintInOut }}
+					in:fly={{ duration: 400, x: -100, y: 0, easing: quintInOut }}
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 28 20"
@@ -70,7 +70,7 @@
 			<div class="flex">Maximizing the Impact of CSR Programs</div>
 			{#if animateChevron2}
 				<svg
-					in:fly={{ duration: 400, x: -200, y: 0, easing: quintInOut }}
+					in:fly={{ duration: 400, x: -100, y: 0, easing: quintInOut }}
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 28 20"
@@ -112,7 +112,7 @@
 			<div class="flex">Industry Trends in Supply Chain Management</div>
 			{#if animateChevron3}
 				<svg
-					in:fly={{ duration: 400, x: -200, y: 0, easing: quintInOut }}
+					in:fly={{ duration: 400, x: -100, y: 0, easing: quintInOut }}
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 28 20"
@@ -154,7 +154,7 @@
 			<div class="flex">Digital Transformation Strategies for SMEs</div>
 			{#if animateChevron4}
 				<svg
-					in:fly={{ duration: 400, x: -200, y: 0, easing: quintInOut }}
+					in:fly={{ duration: 400, x: -100, y: 0, easing: quintInOut }}
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 28 20"
@@ -196,7 +196,7 @@
 			<div class="flex">Optimizing Performance through Cost Reduction</div>
 			{#if animateChevron5}
 				<svg
-					in:fly={{ duration: 400, x: -200, y: 0, easing: quintInOut }}
+					in:fly={{ duration: 400, x: -100, y: 0, easing: quintInOut }}
 					xmlns="http://www.w3.org/2000/svg"
 					fill="none"
 					viewBox="0 0 28 20"
