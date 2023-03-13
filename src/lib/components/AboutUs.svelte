@@ -3,7 +3,7 @@
 	import { sineInOut, quintIn, backOut } from 'svelte/easing';
 	import InView from '$lib/components/InView.svelte';
 
-	import photo1 from '$lib/assets/headshots/photo-1.png';
+	import photo1 from '$lib/assets/headshots/photo-1-v3.png';
 	import photo2 from '$lib/assets/headshots/photo-2.png';
 	import photo3 from '$lib/assets/headshots/photo-3.png';
 	import photo4 from '$lib/assets/headshots/photo-4.png';
@@ -46,54 +46,57 @@
 	</div>
 </div>
 
-<div
-	class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105  "
->
-	<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-	<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-	<img
-		src={photo1}
-		alt="person headshot"
-		class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-	/>
+<div class="flex flex-wrap gap-5 sm:gap-12  justify-between">
+	<div
+		class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex "
+	>
+		<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
+		<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+		<img
+			src={photo1}
+			alt="person headshot"
+			class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+		/>
+	</div>
+
+	<div
+		class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex "
+	>
+		<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
+		<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+		<img
+			src={photo2}
+			alt="person headshot"
+			class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+		/>
+	</div>
+
+	<div
+		class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex "
+	>
+		<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
+		<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+		<img
+			src={photo3}
+			alt="person headshot"
+			class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+		/>
+	</div>
+
+	<div
+		class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105  flex"
+	>
+		<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
+		<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+		<img
+			src={photo4}
+			alt="person headshot"
+			class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+		/>
+	</div>
 </div>
 
-<div
-	class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105  "
->
-	<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-	<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-	<img
-		src={photo2}
-		alt="person headshot"
-		class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-	/>
-</div>
-
-<div
-	class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105  "
->
-	<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-	<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-	<img
-		src={photo3}
-		alt="person headshot"
-		class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-	/>
-</div>
-
-<div
-	class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105  "
->
-	<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-	<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-	<img
-		src={photo4}
-		alt="person headshot"
-		class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-	/>
-</div>
-
+<!-- ------------------------------------------------------------------------------------ -->
 <style>
 	.customTransition {
 		transition: transform 350ms ease-in-out;
