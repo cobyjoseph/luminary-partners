@@ -24,7 +24,7 @@
 <div class="flex flex-col gap-4 font-satoshi text-white ">
 	<div class="flex">
 		<div
-			class="text-5xl pt-10 pb-2 font-extrabold relative flex text-white psuedoUnderline font-josefinSans"
+			class="text-3xl sm:text-5xl pt-10 pb-2 font-extrabold relative flex text-white psuedoUnderline font-josefinSans"
 		>
 			Who we are
 		</div>
@@ -42,7 +42,7 @@
 	</div>
 </div>
 
-<div class="flex flex-col sm:flex-row flex-wrap gap-0 sm:gap-12  justify-between font-satoshi">
+<div class="flex flex-col sm:flex-row flex-wrap gap-0 sm:gap-12  justify-between font-satoshi pb-7">
 	<div class="flex gap-4 items-center sm:flex-col ">
 		<div
 			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
