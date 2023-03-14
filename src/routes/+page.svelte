@@ -4,7 +4,7 @@
 	import Reports from '$lib/components/Reports.svelte';
 	import Services from '$lib/components/Services.svelte';
 	import AboutUs from '$lib/components/AboutUs.svelte';
-	import FAQ from '$lib/components/FAQ.svelte';
+	import FAQ from '$lib/components/FAQPage.svelte';
 </script>
 
 <svelte:head>
