@@ -2,8 +2,9 @@
 	import { draw, fly, scale, slide } from 'svelte/transition';
 	import { sineInOut, quintIn, backOut } from 'svelte/easing';
 	import InView from '$lib/components/InView.svelte';
+	import InView2 from '$lib/InView2.svelte';
 
-	import photo1 from '$lib/assets/headshots/photo-1-v3.png';
+	import photo1 from '$lib/assets/headshots/photo-1.png';
 	import photo2 from '$lib/assets/headshots/photo-2.png';
 	import photo3 from '$lib/assets/headshots/photo-3.png';
 	import photo4 from '$lib/assets/headshots/photo-4.png';
@@ -19,101 +20,170 @@
 			/>
 		</div>
 	{/if}
+
+	<div class="flex flex-col gap-4 font-satoshi text-white ">
+		<div class="flex">
+			<div
+				class="text-3xl sm:text-5xl pt-10 pb-2 font-extrabold relative flex text-white psuedoUnderline font-satoshi"
+			>
+				Who we are
+			</div>
+		</div>
+		<div class="flex flex-col gap-4 sm:text-lg">
+			<div>
+				<span class="font-extrabold  italic">Our mission:</span> To be a trusted partner to businesses,
+				delivering customized solutions that help them achieve their goals and overcome challenges.
+			</div>
+			<div>
+				We are committed to providing exceptional value and quality, and we pride ourselves on our
+				ability to exceed expectations. Our focus on driving growth for our clients is at the core
+				of our mission, and we work tirelessly to ensure their success.
+			</div>
+		</div>
+	</div>
+
+	<div
+		class="flex flex-col sm:flex-row flex-wrap gap-0 sm:gap-12  justify-between font-satoshi pb-10"
+	>
+		<div class="flex gap-4 items-center sm:flex-col ">
+			<div
+				class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
+			>
+				<div
+					class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  "
+				/>
+				<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+				<img
+					src={photo1}
+					alt="person headshot"
+					class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+				/>
+			</div>
+			<div class="flex flex-col sm:items-center ">
+				<div class="flex text-xl text-white font-bold  ">Sarah Jones</div>
+				<div class="flex text-sm text-white   ">Managing Director</div>
+			</div>
+		</div>
+		<div class="flex gap-4 items-center sm:flex-col">
+			<div
+				class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
+			>
+				<div
+					class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  "
+				/>
+				<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+				<img
+					src={photo2}
+					alt="person headshot"
+					class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+				/>
+			</div>
+			<div class="flex flex-col  sm:items-center ">
+				<div class="flex text-xl text-white font-bold  ">Keisha Davis</div>
+				<div class="flex text-sm text-white   ">Senior Consultant</div>
+			</div>
+		</div>
+		<div class="flex gap-4 items-center sm:flex-col">
+			<div
+				class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
+			>
+				<div
+					class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  "
+				/>
+				<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+				<img
+					src={photo3}
+					alt="person headshot"
+					class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+				/>
+			</div>
+			<div class="flex flex-col sm:items-center">
+				<div class="flex text-xl text-white font-bold  ">Ana Torres</div>
+				<div class="flex text-sm text-white   ">Consultant</div>
+			</div>
+		</div>
+		<div class="flex gap-4 items-center sm:flex-col">
+			<div
+				class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
+			>
+				<div
+					class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  "
+				/>
+				<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
+				<img
+					src={photo4}
+					alt="person headshot"
+					class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+				/>
+			</div>
+			<div class="flex flex-col sm:items-center ">
+				<div class="flex text-xl text-white font-bold  ">Matt Walsh</div>
+				<div class="flex text-sm text-white   ">Consultant</div>
+			</div>
+		</div>
+	</div>
 </InView>
 
-<div class="flex flex-col gap-4 font-satoshi text-white ">
-	<div class="flex">
-		<div
-			class="text-3xl sm:text-5xl pt-10 pb-2 font-extrabold relative flex text-white psuedoUnderline font-satoshi"
-		>
-			Who we are
+<InView2 let:isVisible2>
+	{#if isVisible2}
+		<div class="absolute w-[70vh] h-[70vh] bottom-0 left-0 overflow-hidden">
+			<svg
+				class="absolute bottom-0 left-0 -translate-x-1 translate-y-1 "
+				width="184"
+				height="200"
+				viewBox="0 0 184 200"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<line
+					in:draw={{ duration: 200, delay: 400, easing: quintIn }}
+					x1="-24.2929"
+					y1="1.29289"
+					x2="182.707"
+					y2="208.293"
+					stroke="white"
+					stroke-width="2"
+				/>
+			</svg>
+			<svg
+				class="absolute bottom-0 left-0 -translate-x-5 translate-y-5"
+				width="184"
+				height="200"
+				viewBox="0 0 184 200"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<line
+					in:draw={{ duration: 300, delay: 475, easing: quintIn }}
+					x1="-24.2929"
+					y1="1.29289"
+					x2="182.707"
+					y2="208.293"
+					stroke="white"
+					stroke-width="2"
+				/>
+			</svg>
+			<svg
+				class="absolute bottom-0 left-0 -translate-x-9 translate-y-9 "
+				width="184"
+				height="200"
+				viewBox="0 0 184 200"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+			>
+				<line
+					in:draw={{ duration: 300, delay: 550, easing: quintIn }}
+					x1="-24.2929"
+					y1="1.29289"
+					x2="182.707"
+					y2="208.293"
+					stroke="white"
+					stroke-width="2"
+				/>
+			</svg>
 		</div>
-	</div>
-	<div class="flex flex-col gap-4 sm:text-lg">
-		<div>
-			<span class="font-extrabold  italic">Our mission:</span> To be a trusted partner to businesses,
-			delivering customized solutions that help them achieve their goals and overcome challenges.
-		</div>
-		<div>
-			We are committed to providing exceptional value and quality, and we pride ourselves on our
-			ability to exceed expectations. Our focus on driving growth for our clients is at the core of
-			our mission, and we work tirelessly to ensure their success.
-		</div>
-	</div>
-</div>
-
-<div
-	class="flex flex-col sm:flex-row flex-wrap gap-0 sm:gap-12  justify-between font-satoshi pb-10"
->
-	<div class="flex gap-4 items-center sm:flex-col ">
-		<div
-			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
-		>
-			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-			<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-			<img
-				src={photo1}
-				alt="person headshot"
-				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-			/>
-		</div>
-		<div class="flex flex-col sm:items-center ">
-			<div class="flex text-xl text-white font-bold  ">Sarah Jones</div>
-			<div class="flex text-sm text-white   ">Managing Director</div>
-		</div>
-	</div>
-	<div class="flex gap-4 items-center sm:flex-col">
-		<div
-			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
-		>
-			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-			<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-			<img
-				src={photo2}
-				alt="person headshot"
-				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-			/>
-		</div>
-		<div class="flex flex-col  sm:items-center ">
-			<div class="flex text-xl text-white font-bold  ">Keisha Davis</div>
-			<div class="flex text-sm text-white   ">Senior Consultant</div>
-		</div>
-	</div>
-	<div class="flex gap-4 items-center sm:flex-col">
-		<div
-			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
-		>
-			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-			<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-			<img
-				src={photo3}
-				alt="person headshot"
-				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-			/>
-		</div>
-		<div class="flex flex-col sm:items-center">
-			<div class="flex text-xl text-white font-bold  ">Ana Torres</div>
-			<div class="flex text-sm text-white   ">Consultant</div>
-		</div>
-	</div>
-	<div class="flex gap-4 items-center sm:flex-col">
-		<div
-			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
-		>
-			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-			<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
-			<img
-				src={photo4}
-				alt="person headshot"
-				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-			/>
-		</div>
-		<div class="flex flex-col sm:items-center ">
-			<div class="flex text-xl text-white font-bold  ">Matt Walsh</div>
-			<div class="flex text-sm text-white   ">Consultant</div>
-		</div>
-	</div>
-</div>
+	{/if}
+</InView2>
 
 <!-- ------------------------------------------------------------------------------------ -->
 <style>

@@ -81,7 +81,7 @@
 {#if mountAnimations}
 	<div class=" flex flex-col font-satoshi gap-5 mt-5 ">
 		<div class="sm:grid sm:grid-cols-2 flex flex-col text-white gap-5 items-top ">
-			<div class="textSmallClamp flex flex-col  gap-7 ">
+			<div class="textSmallClamp flex flex-col  gap-3 ">
 				<div
 					in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
 					class="textClamp font-satoshi font-extrabold italic text-white "
@@ -94,7 +94,7 @@
 				</div>
 				<div in:fly={{ duration: 300, delay: 150, easing: sineInOut, y: 100 }} class="flex">
 					<div
-						class="bg-secondaryDark  flex  gap-1 justify-center font-bold textSmallClamp px-4 py-3 rounded-lg items-center"
+						class="bg-secondaryDark mt-2 flex  gap-1 justify-center font-bold textSmallClamp px-4 py-3 rounded-lg items-center"
 					>
 						<div class="flex">Learn More</div>
 

@@ -14,7 +14,7 @@
 	});
 </script>
 
-<div class="items-center font-satoshi text-secondaryDark mt-3">
+<div class="items-center font-satoshi text-secondaryDarkest mt-3">
 	<button class=" w-full flex gap-2     text-left" on:click={toggleFAQ1}>
 		<div class="">
 			{#if !showFAQ1}
@@ -24,7 +24,7 @@
 			{/if}
 		</div>
 
-		<div class="flex flex-col gap-2 text-secondaryDark">
+		<div class="flex flex-col gap-2 text-secondaryDarkest">
 			<div class="text-Q font-bold ">What is your work process like?</div>
 
 			{#if showFAQ1}
