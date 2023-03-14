@@ -62,7 +62,7 @@
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<line
-					in:draw={{ duration: 200, delay: 400, easing: quintIn }}
+					in:draw={{ duration: 200, delay: 0, easing: quintIn }}
 					x1="-24.2929"
 					y1="1.29289"
 					x2="182.707"
@@ -80,7 +80,7 @@
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<line
-					in:draw={{ duration: 300, delay: 475, easing: quintIn }}
+					in:draw={{ duration: 300, delay: 75, easing: quintIn }}
 					x1="-24.2929"
 					y1="1.29289"
 					x2="182.707"
@@ -98,7 +98,7 @@
 				xmlns="http://www.w3.org/2000/svg"
 			>
 				<line
-					in:draw={{ duration: 300, delay: 550, easing: quintIn }}
+					in:draw={{ duration: 300, delay: 150, easing: quintIn }}
 					x1="-24.2929"
 					y1="1.29289"
 					x2="182.707"

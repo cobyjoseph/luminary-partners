@@ -4,11 +4,6 @@
 	import { slide } from 'svelte/transition';
 
 	let FAQValues;
-	let showFAQ1 = false;
-
-	function toggleFAQ1() {
-		showFAQ1 = !showFAQ1;
-	}
 
 	FAQStore.subscribe((value) => {
 		FAQValues = value;
@@ -24,7 +19,7 @@
 		</div>
 	</div>
 
-	<OneFAQ />
+	<OneFAQ FAQs={FAQValues} />
 </div>
 
 <style>
