@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { draw, fly, scale, slide } from 'svelte/transition';
 	import { sineInOut, quintIn, backOut } from 'svelte/easing';
+	import StaffPhotos from '$lib/components/StaffPhotos.svelte';
 	import InView from '$lib/components/InView.svelte';
 	import InView2 from '$lib/components/InView2.svelte';
 
@@ -45,13 +46,13 @@
 	<div
 		class="flex flex-col sm:flex-row flex-wrap gap-0 sm:gap-12  justify-between font-satoshi pb-10"
 	>
-		put photo here
+		<StaffPhotos />
 	</div>
 </InView>
 
 <InView2 let:isVisible2>
 	{#if isVisible2}
-		<div class="absolute w-[70vh] h-[70vh] bottom-0 left-0 overflow-hidden">
+		<div class="absolute w-[70vh] h-[70vh] bottom-0 left-0 overflow-hidden -z-10">
 			<svg
 				class="absolute bottom-0 left-0 -translate-x-1 translate-y-1 "
 				width="184"

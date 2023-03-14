@@ -7,19 +7,23 @@
 	let staffData = [
 		{
 			name: 'Sarah Jones',
-			role: 'Managing Director'
+			role: 'Managing Director',
+			photoSRC: photo1
 		},
 		{
 			name: 'Keisha Davis',
-			role: 'Senior Consultant'
+			role: 'Senior Consultant',
+			photoSRC: photo2
 		},
 		{
 			name: 'Ana Torres',
-			role: 'Consultant'
+			role: 'Consultant',
+			photoSRC: photo3
 		},
 		{
 			name: 'Matt Walsh',
-			role: 'Consultant'
+			role: 'Consultant',
+			photoSRC: photo4
 		}
 	];
 </script>
@@ -31,7 +35,7 @@
 		>
 			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
 			<img
-				src={photo1}
+				src={i.photoSRC}
 				alt="person headshot"
 				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
 			/>
