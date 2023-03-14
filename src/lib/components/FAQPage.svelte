@@ -3,11 +3,13 @@
 	import OneFAQ from '$lib/components/OneFAQ.svelte';
 	import { slide } from 'svelte/transition';
 
-	let FAQValues;
+	let data;
 
 	FAQStore.subscribe((value) => {
-		FAQValues = value;
+		data = value;
 	});
+
+	console.log(data);
 </script>
 
 <div class="relative heightClass bg-base px-[8%]">
@@ -19,7 +21,7 @@
 		</div>
 	</div>
 
-	<OneFAQ FAQs={FAQValues} />
+	<OneFAQ FAQs={data} />
 </div>
 
 <style>
