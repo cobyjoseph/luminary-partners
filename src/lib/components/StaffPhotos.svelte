@@ -6,20 +6,20 @@
 
 	let staffData = [
 		{
-			name: 'text',
-			role: 'text'
+			name: 'Sarah Jones',
+			role: 'Managing Director'
 		},
 		{
-			name: 'text',
-			role: 'text'
+			name: 'Keisha Davis',
+			role: 'Senior Consultant'
 		},
 		{
-			name: 'text',
-			role: 'text'
+			name: 'Ana Torres',
+			role: 'Consultant'
 		},
 		{
-			name: 'text',
-			role: 'text'
+			name: 'Matt Walsh',
+			role: 'Consultant'
 		}
 	];
 </script>
@@ -30,16 +30,28 @@
 			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
 		>
 			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-			<!-- <img src={texturePhoto} alt="texture" class=" bg-cover absolute -z-10 bg-repeat" /> -->
 			<img
-				src={photo[i]}
+				src={photo1}
 				alt="person headshot"
 				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
 			/>
 		</div>
 		<div class="flex flex-col sm:items-center ">
-			<div class="flex text-xl text-white font-bold  ">Sarah Jones</div>
-			<div class="flex text-sm text-white   ">Managing Director</div>
+			<div class="flex text-xl text-white font-bold  ">{i.name}</div>
+			<div class="flex text-sm text-white   ">{i.role}</div>
 		</div>
 	</div>
 {/each}
+
+<style>
+	.customTransition {
+		transition: transform 350ms ease-in-out;
+	}
+
+	.backgroundPhotoTexture {
+		background-image: url('$lib/assets/patterns/canvas-texture.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+</style>
