@@ -5,6 +5,7 @@
 	import Services from '$lib/components/Services.svelte';
 	import AboutUs from '$lib/components/AboutUs.svelte';
 	import FAQ from '$lib/components/FAQPage.svelte';
+	import Faq2 from '$lib/components/FAQ2.svelte';
 </script>
 
 <svelte:head>
@@ -31,6 +32,10 @@
 </div>
 
 <FAQ />
+
+<div class="bg-green-400">
+	<Faq2 />
+</div>
 
 <style>
 	.customHeight {

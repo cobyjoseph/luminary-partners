@@ -1,6 +1,11 @@
 <script>
 	import { FAQStore } from '$lib/stores/FAQStores';
 	import { slide } from 'svelte/transition';
+	import { onMount } from 'svelte';
+
+	function toggle() {
+		active = !active;
+	}
 
 	export let FAQs;
 	let showFAQ = false;
@@ -33,3 +38,18 @@
 		</button>
 	</div>
 {/each}
+
+<style>
+	.collapse__header {
+		padding: 1rem;
+		border: 1px solid grey;
+		transition: background 200ms ease-in-out;
+	}
+	.collapse__header:hover {
+		background: #f7f7f7;
+	}
+	.collapse__body {
+		padding: 1rem;
+		background: #f0f0f0;
+	}
+</style>
