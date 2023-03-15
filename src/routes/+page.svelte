@@ -4,8 +4,7 @@
 	import Reports from '$lib/components/Reports.svelte';
 	import Services from '$lib/components/Services.svelte';
 	import AboutUs from '$lib/components/AboutUs.svelte';
-	import FAQ from '$lib/components/FAQPage.svelte';
-	import Faq2 from '$lib/components/FAQ2.svelte';
+	import FAQPage from '$lib/components/FAQPage.svelte';
 </script>
 
 <svelte:head>
@@ -31,11 +30,7 @@
 	<div class="bg-primaryLight  absolute w-full inset-0 -z-20 " />
 </div>
 
-<FAQ />
-
-<div class="bg-green-400">
-	<Faq2 />
-</div>
+<FAQPage />
 
 <style>
 	.customHeight {

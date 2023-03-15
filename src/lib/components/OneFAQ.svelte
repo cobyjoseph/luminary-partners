@@ -1,25 +1,22 @@
 <script>
 	import { FAQStore } from '$lib/stores/FAQStores';
 	import { slide } from 'svelte/transition';
-	import { onMount } from 'svelte';
-
-	function toggle() {
-		active = !active;
-	}
 
 	export let FAQs;
-	let showFAQ = false;
+	let index;
 
-	function toggleFAQ() {
-		showFAQ = !showFAQ;
+	let openStates = FAQs.map(() => false);
+
+	function toggle(index) {
+		openStates[index] = !openStates[index];
 	}
 </script>
 
-{#each FAQs as i}
+{#each FAQs as i, index}
 	<div class="items-center font-satoshi text-secondaryDarkest mt-4">
-		<button class=" w-full flex gap-2  text-left" on:click={toggleFAQ}>
+		<button class=" w-full flex gap-2  text-left" on:click={() => toggle(index)}>
 			<div class="">
-				{#if !showFAQ}
+				{#if !openStates[index]}
 					<div class="flex items-start w-3">+</div>
 				{:else}
 					<div class="flex items-start w-3">-</div>
@@ -29,7 +26,7 @@
 			<div class="flex flex-col gap-2 text-secondaryDarkest text-xl">
 				<div class="text-Q font-bold ">{i.question}</div>
 
-				{#if showFAQ}
+				{#if openStates[index]}
 					<div transition:slide={{ duration: 200 }}>
 						{i.answer}
 					</div>
@@ -38,18 +35,3 @@
 		</button>
 	</div>
 {/each}
-
-<style>
-	.collapse__header {
-		padding: 1rem;
-		border: 1px solid grey;
-		transition: background 200ms ease-in-out;
-	}
-	.collapse__header:hover {
-		background: #f7f7f7;
-	}
-	.collapse__body {
-		padding: 1rem;
-		background: #f0f0f0;
-	}
-</style>
