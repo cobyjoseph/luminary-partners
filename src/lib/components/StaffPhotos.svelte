@@ -28,6 +28,8 @@
 	];
 </script>
 
+<!-- put a smaller max width maybe for big screen sizes - then you won't have to scale everything infinitely -->
+
 {#each staffData as i}
 	<div class="flex gap-2 items-center  sm:flex-col ">
 		<div
