@@ -25,7 +25,7 @@
 					Who we are
 				</div>
 			</div>
-			<div class="flex flex-col gap-4 sm:text-lg mt-3 ">
+			<div class="flex flex-col gap-4 sm:text-lg mt-3  ">
 				<div>
 					<span class="font-extrabold  italic">Our mission:</span> To be a trusted partner to businesses,
 					delivering customized solutions that help them achieve their goals and overcome challenges.
@@ -34,6 +34,27 @@
 					We are committed to providing exceptional value and quality, and we pride ourselves on our
 					ability to exceed expectations. Our focus on driving growth for our clients is at the core
 					of our mission, and we work tirelessly to ensure their success.
+				</div>
+
+				<div
+					class="bg-base mt-2 flex  gap-1 justify-center font-bold textSmallClamp px-6 py-3 rounded-lg items-center hover:bg-base hover:text-secondaryDark text-secondaryDark max-w-fit  "
+				>
+					<div class="flex">Book a consultation</div>
+
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 28 20"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="w-5 h-5 hover:stroke-secondaryDark"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+						/>
+					</svg>
 				</div>
 			</div>
 		</div>
