@@ -3,7 +3,7 @@
 
 <div class="flex justify-between text-white items-center py-5">
 	<div class="flex items-center gap-3">
-		<div class="w-[4rem] flex ">
+		<div class="w-[3rem] sm:w-[4rem] flex ">
 			<svg
 				width="100%"
 				height="100%"
@@ -32,7 +32,7 @@
 				</g>
 			</svg>
 		</div>
-		<div class="flex flex-col text-2xl font-bold font-josefinSans   ">
+		<div class="flex flex-col text-xl sm:text-2xl font-bold font-josefinSans mt-1  ">
 			<div class="flex ">Luminary</div>
 			<div class="flex ">Partners</div>
 		</div>

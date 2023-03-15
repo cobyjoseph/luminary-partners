@@ -13,7 +13,7 @@
 </script>
 
 {#each FAQs as i, index}
-	<div class="items-center font-satoshi text-secondaryDarkest mt-4">
+	<div class="items-center font-satoshi text-secondaryDarkest mt-4 relative z-10">
 		<button class=" w-full flex gap-2  text-left" on:click={() => toggle(index)}>
 			<div class="">
 				{#if !openStates[index]}

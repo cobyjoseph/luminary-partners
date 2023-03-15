@@ -4,12 +4,6 @@
 	import StaffPhotos from '$lib/components/StaffPhotos.svelte';
 	import InView from '$lib/components/InView.svelte';
 	import InView2 from '$lib/components/InView2.svelte';
-
-	import photo1 from '$lib/assets/headshots/photo-1.png';
-	import photo2 from '$lib/assets/headshots/photo-2.png';
-	import photo3 from '$lib/assets/headshots/photo-3.png';
-	import photo4 from '$lib/assets/headshots/photo-4.png';
-	// import texturePhoto from '$lib/assets/patterns/canvas-texture.png';
 </script>
 
 <InView let:isVisible>
