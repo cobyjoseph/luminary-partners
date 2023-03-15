@@ -14,11 +14,14 @@
 	/>
 </svelte:head>
 
+<div
+	class="absolute bg-gradient-to-b from-black to-secondaryDark h-[10rem] -translate-y-[2rem] w-full opacity-30 -z-10 blur-lg"
+/>
 <div class="px-[8%] customHeight">
 	<Menu />
 
 	<LandingPage />
-	<div class="bg-primaryLight  absolute w-full inset-0 -z-20 " />
+	<div class="bg-secondaryLight  absolute w-full inset-0 -z-20 " />
 </div>
 
 <Reports />
@@ -27,7 +30,7 @@
 
 <div class="px-[8%] customHeight relative">
 	<AboutUs />
-	<div class="bg-primaryLight  absolute w-full inset-0 -z-20 " />
+	<div class="bg-secondaryLight  absolute w-full inset-0 -z-20 " />
 </div>
 
 <FAQPage />

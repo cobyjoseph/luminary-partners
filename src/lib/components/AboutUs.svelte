@@ -11,36 +11,38 @@
 		<div class="absolute w-[70vh] h-[70vh] top-0 right-0 overflow-hidden">
 			<div
 				in:scale
-				class="sm:w-[70vh] sm:h-[70vh] w-[30vh] h-[30vh] -z-10 translate-x-[40%] -translate-y-[30%] absolute top-0 right-0 rounded-full bg-primaryDark "
+				class="sm:w-[70vh] sm:h-[70vh] w-[30vh] h-[30vh] -z-10 translate-x-[40%] -translate-y-[30%] absolute top-0 right-0 rounded-full bg-secondaryDark "
 			/>
 		</div>
 	{/if}
 
-	<div class="flex flex-col gap-4 font-satoshi text-white ">
-		<div class="flex">
-			<div
-				class="text-3xl sm:text-5xl pt-10 pb-2 font-extrabold relative flex text-white psuedoUnderline font-satoshi"
-			>
-				Who we are
+	<div class="sm:grid sm:grid-cols-2 justify-center sm:gap-10 ">
+		<div class="flex flex-col gap-4 font-satoshi text-white   ">
+			<div class="flex ">
+				<div
+					class="text-3xl sm:text-5xl pt-10 pb-2 font-extrabold relative flex text-white psuedoUnderline font-satoshi"
+				>
+					Who we are
+				</div>
+			</div>
+			<div class="flex flex-col gap-4 sm:text-lg mt-3 ">
+				<div>
+					<span class="font-extrabold  italic">Our mission:</span> To be a trusted partner to businesses,
+					delivering customized solutions that help them achieve their goals and overcome challenges.
+				</div>
+				<div>
+					We are committed to providing exceptional value and quality, and we pride ourselves on our
+					ability to exceed expectations. Our focus on driving growth for our clients is at the core
+					of our mission, and we work tirelessly to ensure their success.
+				</div>
 			</div>
 		</div>
-		<div class="flex flex-col gap-4 sm:text-lg">
-			<div>
-				<span class="font-extrabold  italic">Our mission:</span> To be a trusted partner to businesses,
-				delivering customized solutions that help them achieve their goals and overcome challenges.
-			</div>
-			<div>
-				We are committed to providing exceptional value and quality, and we pride ourselves on our
-				ability to exceed expectations. Our focus on driving growth for our clients is at the core
-				of our mission, and we work tirelessly to ensure their success.
-			</div>
-		</div>
-	</div>
 
-	<div
-		class="flex flex-col sm:flex-row flex-wrap gap-0 sm:gap-12  justify-between font-satoshi pb-10"
-	>
-		<StaffPhotos />
+		<div
+			class="flex flex-col sm:grid sm:grid-cols-2 sm:flex-row flex-wrap gap-4 sm:gap-6    font-satoshi pb-2"
+		>
+			<StaffPhotos />
+		</div>
 	</div>
 </InView>
 
@@ -115,7 +117,7 @@
 		width: 100%;
 		height: 10px;
 		background-color: none;
-		border-bottom: 2px solid white;
-		border-top: 2px solid white;
+		border-bottom: 4px solid #57599e;
+		border-top: 4px solid #57599e;
 	}
 </style>

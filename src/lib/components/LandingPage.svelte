@@ -18,7 +18,7 @@
 	<div class="absolute w-[70vh] h-[70vh] bottom-0 left-0 overflow-hidden">
 		<div
 			in:scale
-			class="w-[70vh] h-[70vh] -z-10 -translate-x-[40%] translate-y-[30%] absolute bottom-0 left-0 rounded-full bg-primaryDark "
+			class="w-[70vh] h-[70vh] -z-10 -translate-x-[40%] translate-y-[30%] absolute bottom-0 left-0 rounded-full bg-secondaryDark "
 		/>
 
 		<svg
@@ -35,7 +35,7 @@
 				y1="1.29289"
 				x2="182.707"
 				y2="208.293"
-				stroke="white"
+				stroke="#57599e"
 				stroke-width="2"
 			/>
 		</svg>
@@ -53,7 +53,7 @@
 				y1="1.29289"
 				x2="182.707"
 				y2="208.293"
-				stroke="white"
+				stroke="#57599e"
 				stroke-width="2"
 			/>
 		</svg>
@@ -71,7 +71,7 @@
 				y1="1.29289"
 				x2="182.707"
 				y2="208.293"
-				stroke="white"
+				stroke="#57599e"
 				stroke-width="2"
 			/>
 		</svg>
@@ -79,12 +79,12 @@
 {/if}
 
 {#if mountAnimations}
-	<div class=" flex flex-col font-satoshi gap-5 mt-5 ">
-		<div class="sm:grid sm:grid-cols-2 flex flex-col text-white gap-5 items-top ">
+	<div class=" flex flex-col font-satoshi gap-5 mt-5 relative z-20">
+		<div class="sm:grid sm:grid-cols-2 flex flex-col text-white gap-12 items-center ">
 			<div class="textSmallClamp flex flex-col  gap-3 ">
 				<div
 					in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
-					class="textClamp font-satoshi font-extrabold italic text-white "
+					class="textClamp font-satoshi font-extrabold  text-white "
 				>
 					Unlocking Your Business's Full Potential
 				</div>
@@ -94,7 +94,7 @@
 				</div>
 				<div in:fly={{ duration: 300, delay: 150, easing: sineInOut, y: 100 }} class="flex">
 					<div
-						class="bg-secondaryDark mt-2 flex  gap-1 justify-center font-bold textSmallClamp px-4 py-3 rounded-lg items-center"
+						class="bg-base mt-2 flex  gap-1 justify-center font-bold textSmallClamp px-4 py-3 rounded-lg items-center hover:bg-base hover:text-secondaryDark text-secondaryDark  "
 					>
 						<div class="flex">Learn More</div>
 
@@ -104,7 +104,7 @@
 							viewBox="0 0 28 20"
 							stroke-width="1.5"
 							stroke="currentColor"
-							class="w-5 h-5 "
+							class="w-5 h-5 hover:stroke-secondaryDark"
 						>
 							<path
 								stroke-linecap="round"

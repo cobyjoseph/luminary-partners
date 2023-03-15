@@ -15,7 +15,7 @@
 	console.log(data);
 </script>
 
-<div class="relative heightClass bg-base px-[8%] pb-6">
+<div class="relative heightClass bg-base px-[8%] pb-6 ">
 	<InView let:isVisible>
 		{#if isVisible}
 			<div class="absolute w-[70vh] h-[70vh] bottom-0 right-0 overflow-hidden z-0">
@@ -26,7 +26,7 @@
 			</div>
 		{/if}
 
-		<div class="flex">
+		<div class="flex relative z-20">
 			<div
 				class="text-3xl pt-10 pb-[0.6rem] font-extrabold relative flex text-secondaryDark psuedoUnderline font-satoshi sm:text-5xl"
 			>
@@ -39,9 +39,9 @@
 
 	<InView2 let:isVisible2>
 		{#if isVisible2}
-			<div class="absolute w-[70vh] h-[70vh] top-0 left-0 overflow-hidden z-10  ">
+			<div class="absolute w-[70vh] h-[70vh] top-0 left-0 overflow-hidden    ">
 				<svg
-					class="absolute top-0 left-0 -translate-x-1 translate-y-1 "
+					class="absolute top-0 left-0 translate-x-0 -translate-y-2 rotate-90 "
 					width="184"
 					height="200"
 					viewBox="0 0 184 200"
@@ -59,7 +59,7 @@
 					/>
 				</svg>
 				<svg
-					class="absolute top-0 left-0 -translate-x-5 translate-y-5"
+					class="absolute top-0 left-0 -translate-x-5 -translate-y-5  rotate-90"
 					width="184"
 					height="200"
 					viewBox="0 0 184 200"
@@ -77,7 +77,7 @@
 					/>
 				</svg>
 				<svg
-					class="absolute top-0 left-0 -translate-x-9 translate-y-9 "
+					class="absolute top-0 left-0  -translate-x-9 -translate-y-9 rotate-90 "
 					width="184"
 					height="200"
 					viewBox="0 0 184 200"

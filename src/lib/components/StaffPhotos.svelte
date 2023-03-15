@@ -29,7 +29,7 @@
 </script>
 
 {#each staffData as i}
-	<div class="flex gap-4 items-center sm:flex-col ">
+	<div class="flex gap-2 items-center  sm:flex-col ">
 		<div
 			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
 		>

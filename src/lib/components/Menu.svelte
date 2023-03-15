@@ -1,9 +1,10 @@
 <script lang="ts">
 </script>
 
-<div class="flex justify-between text-white items-center py-5">
-	<div class="flex items-center gap-3">
-		<div class="w-[3rem] sm:w-[4rem] flex ">
+
+<div class="flex justify-between text-white items-center py-5 ">
+	<div class="flex items-center gap-2">
+		<div class="w-[3rem] sm:w-[3rem] flex  ">
 			<svg
 				width="100%"
 				height="100%"
@@ -32,9 +33,9 @@
 				</g>
 			</svg>
 		</div>
-		<div class="flex flex-col text-xl sm:text-2xl font-bold font-josefinSans mt-1  ">
+		<div class="flex flex-col text-xl sm:text-xl font-bold font-josefinSans mt-1  ">
 			<div class="flex ">Luminary</div>
-			<div class="flex ">Partners</div>
+			<div class="flex -mt-[0.4rem]">Partners</div>
 		</div>
 	</div>
 
