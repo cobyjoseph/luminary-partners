@@ -12,11 +12,11 @@
 	export let toast;
 </script>
 
-<div class=" bg-white overflow-x-auto">
+<div class=" overflow-x-auto bg-white">
 	<div
-		class="flex   text-xs sm:text-sm py-2 font-semibold 2xl:justify-center 2xl:text-lg sm:px-[8%]"
+		class="flex   py-2 text-xs font-semibold sm:text-sm lg:px-[8%] 2xl:justify-center 2xl:text-lg"
 	>
-		<div class="py-1 sm:pl-0 sm:pr-7 px-3 text-secondaryLight  font-bold">LATEST REPORTS</div>
+		<div class="py-1 px-3 font-bold text-secondaryLight sm:pl-0  sm:pr-7">LATEST REPORTS</div>
 		<div
 			on:mouseenter={() => {
 				animateChevron1 = !animateChevron1;
@@ -24,7 +24,7 @@
 			on:mouseleave={() => {
 				animateChevron1 = !animateChevron1;
 			}}
-			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer hover:text-secondaryLight  justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px] py-1 px-3  border-l-secondaryLight "
+			class="flex min-w-[10rem] flex-col justify-between border-l-[1.5px] border-l-secondaryLight  py-1  px-3 hover:cursor-pointer hover:bg-base hover:text-secondaryLight sm:min-w-[13rem]  2xl:min-w-[20rem] "
 		>
 			<div class="flex">Implementing Agile Methodologies</div>
 
@@ -35,7 +35,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"
@@ -49,7 +49,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"
@@ -67,7 +67,7 @@
 			on:mouseleave={() => {
 				animateChevron2 = !animateChevron2;
 			}}
-			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer hover:text-secondaryLight justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
+			class="flex min-w-[10rem] flex-col justify-between border-l-[1.5px] border-l-secondaryLight py-1  px-3 hover:cursor-pointer hover:bg-base  hover:text-secondaryLight sm:min-w-[13rem] 2xl:min-w-[20rem]"
 		>
 			<div class="flex">Maximizing the Impact of CSR Programs</div>
 			{#if animateChevron2}
@@ -77,7 +77,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"
@@ -91,7 +91,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"
@@ -109,7 +109,7 @@
 			on:mouseleave={() => {
 				animateChevron3 = !animateChevron3;
 			}}
-			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer hover:text-secondaryLight justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
+			class="flex min-w-[10rem] flex-col justify-between border-l-[1.5px] border-l-secondaryLight py-1  px-3 hover:cursor-pointer hover:bg-base  hover:text-secondaryLight sm:min-w-[13rem] 2xl:min-w-[20rem]"
 		>
 			<div class="flex">Industry Trends in Supply Chain Management</div>
 			{#if animateChevron3}
@@ -119,7 +119,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"
@@ -133,7 +133,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"
@@ -151,7 +151,7 @@
 			on:mouseleave={() => {
 				animateChevron4 = !animateChevron4;
 			}}
-			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer hover:text-secondaryLight justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
+			class="flex min-w-[10rem] flex-col justify-between border-l-[1.5px] border-l-secondaryLight py-1  px-3 hover:cursor-pointer hover:bg-base  hover:text-secondaryLight sm:min-w-[13rem] 2xl:min-w-[20rem]"
 		>
 			<div class="flex">Digital Transformation Strategies for SMEs</div>
 			{#if animateChevron4}
@@ -161,7 +161,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"
@@ -175,7 +175,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"
@@ -193,7 +193,7 @@
 			on:mouseleave={() => {
 				animateChevron5 = !animateChevron5;
 			}}
-			class="flex flex-col min-w-[10rem] hover:bg-base hover:cursor-pointer hover:text-secondaryLight justify-between  sm:min-w-[13rem] 2xl:min-w-[20rem] border-l-[1.5px]  border-l-secondaryLight py-1 px-3"
+			class="flex min-w-[10rem] flex-col justify-between border-l-[1.5px] border-l-secondaryLight py-1  px-3 hover:cursor-pointer hover:bg-base  hover:text-secondaryLight sm:min-w-[13rem] 2xl:min-w-[20rem]"
 		>
 			<div class="flex">Optimizing Performance through Cost Reduction</div>
 			{#if animateChevron5}
@@ -203,7 +203,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"
@@ -217,7 +217,7 @@
 					fill="none"
 					viewBox="0 0 28 20"
 					stroke-width="1.5"
-					class="w-5 h-5 flex self-end stroke-secondaryLight "
+					class="flex h-5 w-5 self-end stroke-secondaryLight "
 				>
 					<path
 						stroke-linecap="round"

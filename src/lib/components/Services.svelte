@@ -1,29 +1,42 @@
-<div class="relative heightClass bg-base">
-	<div class=" flex flex-col sm:grid-cols-2 m-auto sm:grid heightClass gap-4  z-10 relative">
-		<div class="min-h-[25vh] sm:min-h-0 ">image here</div>
-		<div class="   justify-center flex flex-col sm:px-20 px-[8%] gap-2 min-h-[25vh] sm:min-h-0">
-			<div class="text-3xl font-satoshi font-extrabold text-secondaryDark">
-				Developing a roadmap for success
-			</div>
-			<div class="text-normal font-satoshi font-normal pr-4 ">
-				Align your business goals, resources, and initiatives to drive growth and profitability.
-			</div>
-		</div>
-		<div class=" sm:hidden min-h-[25vh] sm:min-h-0 ">image here</div>
+<script>
+	import bgLines from '$lib/assets/patterns/background-lines-v0.1.svg';
+	import bgLinesPortrait from '$lib/assets/patterns/portrait-background-lines-v0.2.svg';
+	import InView from '$lib/components/InView.svelte';
 
-		<div class="  justify-center flex flex-col sm:px-20 px-[8%] gap-2 min-h-[25vh] sm:min-h-0">
-			<div class="text-3xl font-satoshi font-extrabold text-secondaryDark">
-				Streamlining your business processes
-			</div>
-			<div class="text-normal font-satoshi font-normal pr-4">
-				Identify inefficiencies, reduce costs, and improve performance with data-driven insights.
+	let scroll;
+	let speed = 400;
+</script>
+
+<svelte:window bind:scrollY={scroll} />
+
+{scroll}
+
+<div class="heightClass relative overflow-hidden">
+	<img class="absolute z-10 bg-cover portrait:hidden" src={bgLines} alt="backgroundlines" />
+	<img
+		class="absolute z-10 scale-125 bg-cover landscape:hidden"
+		src={bgLinesPortrait}
+		alt="backgroundlines"
+	/>
+
+	<InView let:isVisible yThreshold="-500">
+		<div class="flex justify-center">
+			<div
+				class=" relative z-20 px-[8%] font-satoshi text-3xl font-extrabold text-secondaryDark {isVisible
+					? 'customTranslate bg-red-400'
+					: 'translate-y-0 bg-green-500'}"
+			>
+				Your partner for:
 			</div>
 		</div>
-		<div class="hidden sm:block min-h-[25vh] sm:min-h-0 ">image here</div>
-	</div>
+	</InView>
 </div>
 
 <style>
+	.customTranslate {
+		transform: translateY('`${scroll}px`');
+	}
+
 	.heightClass {
 		min-height: 100vh;
 		min-height: 100svh;

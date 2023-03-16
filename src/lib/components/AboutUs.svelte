@@ -6,26 +6,26 @@
 	import InView2 from '$lib/components/InView2.svelte';
 </script>
 
-<InView let:isVisible>
+<InView yThreshold="0" let:isVisible>
 	{#if isVisible}
-		<div class="absolute w-[70vh] h-[70vh] top-0 right-0 overflow-hidden">
+		<div class="absolute top-0 right-0 h-[70vh] w-[70vh] overflow-hidden">
 			<div
 				in:scale
-				class="sm:w-[70vh] sm:h-[70vh] w-[30vh] h-[30vh] -z-10 translate-x-[40%] -translate-y-[30%] absolute top-0 right-0 rounded-full bg-secondaryDark "
+				class="absolute top-0 right-0 -z-10 h-[30vh] w-[30vh] translate-x-[40%] -translate-y-[30%] rounded-full bg-secondaryDark sm:h-[70vh] sm:w-[70vh] "
 			/>
 		</div>
 	{/if}
 
-	<div class="sm:grid sm:grid-cols-2 justify-center sm:gap-10 ">
+	<div class="justify-center sm:grid sm:grid-cols-2 sm:gap-10 ">
 		<div class="flex flex-col gap-4 font-satoshi text-white   ">
 			<div class="flex ">
 				<div
-					class="text-3xl sm:text-5xl pt-10 pb-2 font-extrabold relative flex text-white psuedoUnderline font-satoshi"
+					class="psuedoUnderline relative flex pt-10 pb-2 font-satoshi text-3xl font-extrabold text-white sm:text-5xl"
 				>
 					Who we are
 				</div>
 			</div>
-			<div class="flex flex-col gap-4 sm:text-lg mt-3  ">
+			<div class="mt-3 flex flex-col gap-4 sm:text-lg  ">
 				<div>
 					<span class="font-extrabold  italic">Our mission:</span> To be a trusted partner to businesses,
 					delivering customized solutions that help them achieve their goals and overcome challenges.
@@ -37,7 +37,7 @@
 				</div>
 
 				<div
-					class="bg-base mt-2 flex  gap-1 justify-center font-bold textSmallClamp px-6 py-3 rounded-lg items-center hover:bg-base hover:text-secondaryDark text-secondaryDark max-w-fit  "
+					class="textSmallClamp mt-2 flex  max-w-fit items-center justify-center gap-1 rounded-lg bg-base px-6 py-3 font-bold text-secondaryDark hover:bg-base hover:text-secondaryDark  "
 				>
 					<div class="flex">Book a consultation</div>
 
@@ -47,7 +47,7 @@
 						viewBox="0 0 28 20"
 						stroke-width="1.5"
 						stroke="currentColor"
-						class="w-5 h-5 hover:stroke-secondaryDark"
+						class="h-5 w-5 hover:stroke-secondaryDark"
 					>
 						<path
 							stroke-linecap="round"
@@ -60,7 +60,7 @@
 		</div>
 
 		<div
-			class="flex flex-col sm:grid sm:grid-cols-2 sm:flex-row flex-wrap gap-4 sm:gap-6    font-satoshi pb-2"
+			class="flex flex-col flex-wrap gap-4 pb-2 font-satoshi sm:grid sm:grid-cols-2    sm:flex-row sm:gap-6"
 		>
 			<StaffPhotos />
 		</div>
@@ -69,7 +69,7 @@
 
 <InView2 let:isVisible2>
 	{#if isVisible2}
-		<div class="absolute w-[70vh] h-[70vh] bottom-0 left-0 overflow-hidden -z-10">
+		<div class="absolute bottom-0 left-0 -z-10 h-[70vh] w-[70vh] overflow-hidden">
 			<svg
 				class="absolute bottom-0 left-0 -translate-x-1 translate-y-1 "
 				width="184"

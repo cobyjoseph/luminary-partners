@@ -15,20 +15,20 @@
 	console.log(data);
 </script>
 
-<div class="relative heightClass bg-base px-[8%] pb-6 ">
-	<InView let:isVisible>
+<div class="heightClass relative bg-base px-[8%] pb-6 ">
+	<InView yThreshold="0" let:isVisible>
 		{#if isVisible}
-			<div class="absolute w-[70vh] h-[70vh] bottom-0 right-0 overflow-hidden z-0">
+			<div class="absolute bottom-0 right-0 z-0 h-[70vh] w-[70vh] overflow-hidden">
 				<div
 					in:scale={{ delay: 400 }}
-					class="sm:w-[70vh] sm:h-[70vh] w-[30vh] h-[30vh] -z-10 absolute translate-x-[40%] translate-y-[30%] bottom-0 right-0 rounded-full bg-baseDark "
+					class="absolute bottom-0 right-0 -z-10 h-[30vh] w-[30vh] translate-x-[40%] translate-y-[30%] rounded-full bg-baseDark sm:h-[70vh] sm:w-[70vh] "
 				/>
 			</div>
 		{/if}
 
-		<div class="flex relative z-20">
+		<div class="relative z-20 flex">
 			<div
-				class="text-3xl pt-10 pb-[0.6rem] font-extrabold relative flex text-secondaryDark psuedoUnderline font-satoshi sm:text-5xl"
+				class="psuedoUnderline relative flex pt-10 pb-[0.6rem] font-satoshi text-3xl font-extrabold text-secondaryDark sm:text-5xl"
 			>
 				Common questions
 			</div>
@@ -39,7 +39,7 @@
 
 	<InView2 let:isVisible2>
 		{#if isVisible2}
-			<div class="absolute w-[70vh] h-[70vh] top-0 left-0 overflow-hidden    ">
+			<div class="absolute top-0 left-0 h-[70vh] w-[70vh] overflow-hidden    ">
 				<svg
 					class="absolute top-0 left-0 translate-x-0 -translate-y-2 rotate-90 "
 					width="184"
@@ -112,7 +112,8 @@
 		width: 100%;
 		height: 10px;
 		background-color: none;
-		border-bottom: 2px solid #3c3e6d;
-		border-top: 2px solid #3c3e6d;
+		border-bottom: 4px solid #cdcdc1;
+		border-top: 4px solid #cdcdc1;
+		z-index: -20;
 	}
 </style>
