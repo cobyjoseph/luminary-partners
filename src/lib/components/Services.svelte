@@ -6,14 +6,16 @@
 
 	let colorBlue = 'blue';
 	let colorRed = 'red';
-	let tempScroll = 400;
+
 	let scroll: number;
-	let speed = 0.4;
+	let speed = 0.7;
 	let pageHeight;
 
 	pageHeightInitial.subscribe((value) => {
 		pageHeight = value;
 	});
+
+	$: scrollStart = scroll - pageHeight;
 </script>
 
 <svelte:window bind:scrollY={scroll} />
@@ -23,21 +25,23 @@ scroll amount: {scroll}
 	page height: {pageHeight}
 </div>
 
+scroll start: {scrollStart}
+
 <!-- The issue is just that I need to reset scroll to 0 when at the top of the second page. so I need to make it scroll - the outerHeight of the first two pages. So just need to bind outerheight of those and use a store? or some other method to pass that value between the components -->
 
 <div class="heightClass relative overflow-hidden">
 	<img class="absolute z-10 bg-cover portrait:hidden" src={bgLines} alt="backgroundlines" />
 	<img
-		class="absolute z-10 scale-125 bg-cover landscape:hidden"
+		class="absolute z-10 translate-y-[15%] translate-x-[-95%] scale-125 bg-cover landscape:hidden "
 		src={bgLinesPortrait}
 		alt="backgroundlines"
 	/>
 
-	<InView let:isVisible yThreshold="-400">
+	<InView let:isVisible yThreshold="-100">
 		<div class="flex justify-center">
 			<div
 				style:color={isVisible ? `${colorRed}` : 'blue'}
-				style:transform={isVisible ? `translateY(${scroll * speed}px)` : `translateY(0px)`}
+				style:transform={isVisible ? `translateY(${(scroll - 500) * speed}px)` : `translateY(0px)`}
 				class=" relative z-20 px-[8%] font-satoshi text-3xl font-extrabold text-secondaryDark"
 			>
 				{isVisible}

@@ -5,7 +5,7 @@
 	import Services from '$lib/components/Services.svelte';
 	import AboutUs from '$lib/components/AboutUs.svelte';
 	import FAQPage from '$lib/components/FAQPage.svelte';
-	import { pageHeightInitial } from '$lib/stores/heightStore.ts';
+	import { pageHeightInitial } from '$lib/stores/heightStore';
 </script>
 
 <svelte:head>
