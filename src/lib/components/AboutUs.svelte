@@ -6,7 +6,7 @@
 	import InView2 from '$lib/components/InView2.svelte';
 </script>
 
-<InView yThreshold="0" let:isVisible>
+<InView yThreshold="300" let:isVisible>
 	{#if isVisible}
 		<div class="absolute top-0 right-0 h-[70vh] w-[70vh] overflow-hidden">
 			<div
@@ -67,8 +67,8 @@
 	</div>
 </InView>
 
-<InView2 let:isVisible2>
-	{#if isVisible2}
+<InView yThreshold="200" let:isVisible>
+	{#if isVisible}
 		<div class="absolute bottom-0 left-0 -z-10 h-[70vh] w-[70vh] overflow-hidden">
 			<svg
 				class="absolute bottom-0 left-0 -translate-x-1 translate-y-1 "
@@ -126,7 +126,7 @@
 			</svg>
 		</div>
 	{/if}
-</InView2>
+</InView>
 
 <!-- ------------------------------------------------------------------------------------ -->
 <style>
