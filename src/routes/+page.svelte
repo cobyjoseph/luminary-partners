@@ -5,6 +5,7 @@
 	import Services from '$lib/components/Services.svelte';
 	import AboutUs from '$lib/components/AboutUs.svelte';
 	import FAQPage from '$lib/components/FAQPage.svelte';
+	import { pageHeightInitial } from '$lib/stores/heightStore.ts';
 </script>
 
 <svelte:head>
@@ -15,22 +16,25 @@
 </svelte:head>
 
 <div
-	class="absolute bg-gradient-to-b from-black to-secondaryDark h-[10rem] -translate-y-[2rem] w-full opacity-30 -z-10 blur-lg"
+	class="absolute -z-10 h-[10rem] w-full -translate-y-[2rem] bg-gradient-to-b from-black to-secondaryDark opacity-30 blur-lg"
 />
-<div class="px-[8%] customHeight">
-	<Menu />
 
-	<LandingPage />
-	<div class="bg-secondaryLight  absolute w-full inset-0 -z-20 " />
+<div bind:clientHeight={$pageHeightInitial}>
+	<div class="customHeight relative px-[8%]">
+		<Menu />
+
+		<LandingPage />
+		<div class="absolute  inset-0 -z-20 w-full bg-secondaryLight " />
+	</div>
+
+	<Reports />
 </div>
-
-<Reports />
 
 <Services />
 
-<div class="px-[8%] customHeight relative">
+<div class="customHeight relative px-[8%]">
 	<AboutUs />
-	<div class="bg-secondaryLight  absolute w-full inset-0 -z-20 " />
+	<div class="absolute  inset-0 -z-20 w-full bg-secondaryLight " />
 </div>
 
 <FAQPage />

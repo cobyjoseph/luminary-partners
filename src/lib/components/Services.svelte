@@ -2,17 +2,26 @@
 	import bgLines from '$lib/assets/patterns/background-lines-v0.1.svg';
 	import bgLinesPortrait from '$lib/assets/patterns/portrait-background-lines-v0.2.svg';
 	import InView from '$lib/components/InView.svelte';
+	import { pageHeightInitial } from '$lib/stores/heightStore';
 
 	let colorBlue = 'blue';
 	let colorRed = 'red';
 	let tempScroll = 400;
-	let scroll;
+	let scroll: number;
 	let speed = 0.4;
+	let pageHeight;
+
+	pageHeightInitial.subscribe((value) => {
+		pageHeight = value;
+	});
 </script>
 
 <svelte:window bind:scrollY={scroll} />
 
-{scroll}
+scroll amount: {scroll}
+<div class="bg-green-400">
+	page height: {pageHeight}
+</div>
 
 <!-- The issue is just that I need to reset scroll to 0 when at the top of the second page. so I need to make it scroll - the outerHeight of the first two pages. So just need to bind outerheight of those and use a store? or some other method to pass that value between the components -->
 
