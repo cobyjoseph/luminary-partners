@@ -52,7 +52,7 @@ scroll amount: {scroll}
 		<img
 			class="absolute z-10 bg-blue-300  "
 			style:transform={isVisible
-				? `translateX(-200%) scale(10.0)`
+				? `translateX(${derivedTranslate}%) scale(10.0)`
 				: 'translateX(-500%) scale(10.0)'}
 			src={bgLinesPortrait}
 			alt="backgroundlines"
