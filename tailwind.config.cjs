@@ -15,7 +15,8 @@ module.exports = {
 				secondaryDarkest: '#18182b',
 				secondaryLight: '#44467C',
 				base: '#EBEBE6',
-				baseDark: '#cdcdc1'
+				baseDark: '#cdcdc1',
+				bright: '#2155FF'
 			},
 			fontFamily: {
 				workSans: ['Work Sans', 'sans'],
