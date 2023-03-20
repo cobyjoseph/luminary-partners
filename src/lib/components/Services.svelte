@@ -29,6 +29,7 @@
 
 <svelte:window bind:scrollY={scroll} />
 
+derived translate: {derivedTranslate}
 <!-- <div>
 	derived translate: {derivedTranslate}
 	<div>
@@ -61,7 +62,7 @@
 			class="absolute z-10 landscape:hidden   "
 			style:transform={isVisible
 				? `translateX(${derivedTranslate}%) scale(10.0)`
-				: 'translateX(-500%) scale(10.0)'}
+				: 'translateX(-50%) scale(10.0)'}
 			src={bgLinesPortrait}
 			alt="backgroundlines"
 		/>
@@ -69,50 +70,80 @@
 			class="absolute z-10 portrait:hidden  "
 			style:transform={isVisible
 				? `translateX(${derivedTranslate}%) scale(3.0)`
-				: 'translateX(-500%) scale(10.0)'}
+				: 'translateX(-50%) scale(10.0)'}
 			src={bgLinesPortrait}
 			alt="backgroundlines"
 		/>
 
 		<div class="flex flex-col items-center justify-center text-center">
-			<div
-				style:transform={isVisible
-					? `translateY(${(scroll - 500) * speed}px)`
-					: `translateY(-400px)`}
-				class=" textClamp relative z-20 mb-2 flex px-[8%] font-satoshi font-extrabold text-black"
-			>
-				We are here to help you:
-			</div>
-			{#if derivedTranslate > -250}
+			{#if derivedTranslate > -250 && derivedTranslate < -50}
 				<div
-					in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
 					style:transform={isVisible
 						? `translateY(${(scroll - 500) * speed}px)`
 						: `translateY(-400px)`}
-					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold italic text-bright"
+					class=" textClamp relative z-20 mb-2 flex px-[8%] font-satoshi font-extrabold text-black"
+				>
+					We are here to help you:
+				</div>
+				{#if derivedTranslate > -250}
+					<div
+						in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
+						style:transform={isVisible
+							? `translateY(${(scroll - 500) * speed}px)`
+							: `translateY(-400px)`}
+						class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold italic text-bright"
+					>
+						identify inefficienies,
+					</div>
+				{/if}
+				{#if derivedTranslate > -170}
+					<div
+						in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
+						style:transform={isVisible
+							? `translateY(${(scroll - 500) * speed}px)`
+							: `translateY(-400px)`}
+						class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold italic text-bright"
+					>
+						create a roadmap,
+					</div>
+				{/if}
+
+				{#if derivedTranslate > -100}
+					<div
+						in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
+						style:transform={isVisible
+							? `translateY(${(scroll - 500) * speed}px)`
+							: `translateY(-400px)`}
+						class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold italic text-bright"
+					>
+						and drive growth.
+					</div>
+				{/if}
+			{/if}
+			{#if derivedTranslate > -50}
+				<div
+					class=" textClamp relative z-20 mb-2 flex translate-y-[-400px] px-[8%] font-satoshi font-extrabold text-black"
+				>
+					We are here to help you:
+				</div>
+
+				<div
+					in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
+					class=" textClampSmall relative z-20 flex translate-y-[-400px] px-[8%] font-satoshi font-semibold italic text-bright"
 				>
 					identify inefficienies,
 				</div>
-			{/if}
-			{#if derivedTranslate > -170}
+
 				<div
 					in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
-					style:transform={isVisible
-						? `translateY(${(scroll - 500) * speed}px)`
-						: `translateY(-400px)`}
-					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold italic text-bright"
+					class=" textClampSmall relative z-20 flex translate-y-[-400px] px-[8%] font-satoshi font-semibold italic text-bright"
 				>
 					create a roadmap,
 				</div>
-			{/if}
 
-			{#if derivedTranslate > -100}
 				<div
 					in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
-					style:transform={isVisible
-						? `translateY(${(scroll - 500) * speed}px)`
-						: `translateY(-400px)`}
-					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold italic text-bright"
+					class=" textClampSmall relative z-20 flex translate-y-[-400px] px-[8%] font-satoshi font-semibold italic text-bright"
 				>
 					and drive growth.
 				</div>
