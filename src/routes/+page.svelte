@@ -21,6 +21,9 @@
 />
 
 <div bind:clientHeight={$landingPageHeightInitial}>
+	<div class="backgroundPhoto w-full h-full absolute -z-20 " />
+	<div class="bg-slate-900 absolute w-full h-full  -z-10 opacity-60 " />
+
 	<div class="customHeight relative px-[8%]">
 		<Menu />
 

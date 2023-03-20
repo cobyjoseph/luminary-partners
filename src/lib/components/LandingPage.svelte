@@ -14,12 +14,11 @@
 	});
 </script>
 
-
 {#if mountAnimations}
 	<div class="absolute bottom-0 left-0 h-[70vh] w-[70vh] overflow-hidden">
 		<div
 			in:scale
-			class="absolute bottom-0 left-0 -z-10 h-[70vh] w-[70vh] -translate-x-[40%] translate-y-[30%] rounded-full bg-secondaryDark "
+			class="absolute bottom-0 left-0 -z-10 h-[70vh] w-[70vh] -translate-x-[40%] translate-y-[30%] rounded-full "
 		/>
 
 		<svg
