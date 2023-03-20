@@ -26,19 +26,22 @@ scroll amount: {scroll}
 	landing page height: {landingPageHeight}
 </div>
 
-scroll start: {scrollStart}
+<!-- scroll start: {scrollStart} -->
 <div>
 	container height: {containerHeight}
 </div>
 
 <!-- The issue is just that I need to reset scroll to 0 when at the top of the second page. so I need to make it scroll - the outerHeight of the first two pages. So just need to bind outerheight of those and use a store? or some other method to pass that value between the components -->
+<!-- try making a y threshold down   -->
+
+<!-- I want the translate to be from the start of  -->
 
 <div class="heightClass relative overflow-hidden" bind:clientHeight={containerHeight}>
 	<InView let:isVisible yThreshold="-100">
 		<img class="absolute z-10  portrait:hidden " src={bgLinesPortrait} alt="backgroundlines" />
 		<img
 			class="absolute z-10  scale-[1000%] landscape:hidden {isVisible
-				? 'translate-x-[200%]'
+				? 'translate-x-[-400%]'
 				: 'translate-x-[-40%]'} "
 			src={bgLinesPortrait}
 			alt="backgroundlines"

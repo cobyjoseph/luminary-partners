@@ -1,4 +1,4 @@
 import { writable } from "svelte/store";
 
-export const LandingPageHeightInitial = writable(0)
+export const landingPageHeightInitial = writable(0)
 

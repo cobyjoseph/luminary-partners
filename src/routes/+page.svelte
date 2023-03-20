@@ -5,7 +5,7 @@
 	import Services from '$lib/components/Services.svelte';
 	import AboutUs from '$lib/components/AboutUs.svelte';
 	import FAQPage from '$lib/components/FAQPage.svelte';
-	import { LandingPageHeightInitial } from '$lib/stores/heightStore';
+	import { landingPageHeightInitial } from '$lib/stores/heightStore';
 </script>
 
 <svelte:head>
@@ -19,7 +19,7 @@
 	class="absolute -z-10 h-[10rem] w-full -translate-y-[2rem] bg-gradient-to-b from-black to-secondaryDark opacity-30 blur-lg"
 />
 
-<div bind:clientHeight={$LandingPageHeightInitial}>
+<div bind:clientHeight={$landingPageHeightInitial}>
 	<div class="customHeight relative px-[8%]">
 		<Menu />
 
