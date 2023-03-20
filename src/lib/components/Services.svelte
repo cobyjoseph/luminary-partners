@@ -3,6 +3,7 @@
 	import bgLinesPortrait from '$lib/assets/patterns/portrait-background-lines-v0.3.svg';
 	import InView from '$lib/components/InView.svelte';
 	import { landingPageHeightInitial } from '$lib/stores/heightStore';
+	import { derived } from 'svelte/store';
 
 	let colorBlue = 'blue';
 	let colorRed = 'red';
@@ -11,6 +12,8 @@
 	let speed = 0.5;
 	let landingPageHeight;
 	let containerHeight;
+
+	$: derivedTranslate = ((scroll - landingPageHeight) / containerHeight) * 2.6 * 100 - 200;
 
 	landingPageHeightInitial.subscribe((value) => {
 		landingPageHeight = value;
@@ -21,6 +24,9 @@
 
 <svelte:window bind:scrollY={scroll} />
 
+<div>
+	derived translate: {derivedTranslate}
+</div>
 scroll amount: {scroll}
 <div class="bg-green-400">
 	landing page height: {landingPageHeight}
@@ -31,6 +37,10 @@ scroll amount: {scroll}
 	container height: {containerHeight}
 </div>
 
+<!-- <div>
+	variable test: `{(((${scroll} - ${landingPageHeight}) / ${containerHeight}) - 200) * 2.6}%`
+</div> -->
+
 <!-- The issue is just that I need to reset scroll to 0 when at the top of the second page. so I need to make it scroll - the outerHeight of the first two pages. So just need to bind outerheight of those and use a store? or some other method to pass that value between the components -->
 <!-- try making a y threshold down   -->
 
@@ -38,11 +48,10 @@ scroll amount: {scroll}
 
 <div class="heightClass relative overflow-hidden" bind:clientHeight={containerHeight}>
 	<InView let:isVisible yThreshold="-100">
-		<img class="absolute z-10  portrait:hidden " src={bgLinesPortrait} alt="backgroundlines" />
+		<!-- <img class="absolute z-10  portrait:hidden " src={bgLinesPortrait} alt="backgroundlines" /> -->
 		<img
-			class="absolute z-10  scale-[1000%] landscape:hidden {isVisible
-				? 'translate-x-[-400%]'
-				: 'translate-x-[-40%]'} "
+			style:transform={isVisible ? `translateY(-${derivedTranslate}%)` : `translateX(-300%)`}
+			class="absolute z-10  scale-[1000%] "
 			src={bgLinesPortrait}
 			alt="backgroundlines"
 		/>
@@ -59,6 +68,7 @@ scroll amount: {scroll}
 		</div>
 	</InView>
 </div>
+''
 
 <style>
 	.heightClass {

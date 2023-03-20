@@ -15,10 +15,10 @@
 </script>
 
 {#if mountAnimations}
-	<div class="absolute w-[70vh] h-[70vh] bottom-0 left-0 overflow-hidden">
+	<div class="absolute bottom-0 left-0 h-[70vh] w-[70vh] overflow-hidden">
 		<div
 			in:scale
-			class="w-[70vh] h-[70vh] -z-10 -translate-x-[40%] translate-y-[30%] absolute bottom-0 left-0 rounded-full bg-secondaryDark "
+			class="absolute bottom-0 left-0 -z-10 h-[70vh] w-[70vh] -translate-x-[40%] translate-y-[30%] rounded-full bg-secondaryDark "
 		/>
 
 		<svg
@@ -79,8 +79,8 @@
 {/if}
 
 {#if mountAnimations}
-	<div class=" flex flex-col font-satoshi gap-5 mt-5 relative z-20">
-		<div class="sm:grid sm:grid-cols-2 flex flex-col text-white gap-12 items-center ">
+	<div class=" relative z-20 mt-5 flex flex-col gap-5 font-satoshi">
+		<div class="flex flex-col items-center gap-12 text-white sm:grid sm:grid-cols-2 ">
 			<div class="textSmallClamp flex flex-col  gap-3 ">
 				<div
 					in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
@@ -94,7 +94,7 @@
 				</div>
 				<div in:fly={{ duration: 300, delay: 150, easing: sineInOut, y: 100 }} class="flex">
 					<div
-						class="bg-base mt-2 flex  gap-1 justify-center font-bold textSmallClamp px-4 py-3 rounded-lg items-center hover:bg-base hover:text-secondaryDark text-secondaryDark  "
+						class="textSmallClamp mt-2 flex  items-center justify-center gap-1 rounded-lg bg-base px-4 py-3 font-bold text-secondaryDark hover:bg-base hover:text-[#2155FF]  "
 					>
 						<div class="flex">Learn More</div>
 
@@ -104,7 +104,7 @@
 							viewBox="0 0 28 20"
 							stroke-width="1.5"
 							stroke="currentColor"
-							class="w-5 h-5 hover:stroke-secondaryDark"
+							class="h-5 w-5 hover:stroke-secondaryDark"
 						>
 							<path
 								stroke-linecap="round"
