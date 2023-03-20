@@ -2,10 +2,11 @@
 	import Menu from '$lib/components/Menu.svelte';
 	import LandingPage from '$lib/components/LandingPage.svelte';
 	import Reports from '$lib/components/Reports.svelte';
-	import Services from '$lib/components/Services.svelte';
+	import Services1 from '$lib/components/Services1.svelte';
 	import AboutUs from '$lib/components/AboutUs.svelte';
 	import FAQPage from '$lib/components/FAQPage.svelte';
 	import { landingPageHeightInitial } from '$lib/stores/heightStore';
+	import Services2 from '$lib/components/Services2.svelte';
 </script>
 
 <svelte:head>
@@ -27,10 +28,12 @@
 		<div class="absolute  inset-0 -z-20 w-full bg-secondaryLight " />
 	</div>
 
-	<Reports />
+	<!-- <Reports /> -->
 </div>
 
-<Services />
+<Services1 />
+
+<Services2 />
 
 <div class="customHeight relative px-[8%]">
 	<AboutUs />

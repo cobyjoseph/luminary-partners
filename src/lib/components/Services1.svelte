@@ -29,7 +29,7 @@
 
 <svelte:window bind:scrollY={scroll} />
 
-derived translate: {derivedTranslate}
+<!-- derived translate: {derivedTranslate} -->
 <!-- <div>
 	derived translate: {derivedTranslate}
 	<div>
@@ -58,69 +58,68 @@ derived translate: {derivedTranslate}
 <div class="heightClass relative overflow-hidden" bind:clientHeight={containerHeight}>
 	<InView let:isVisible yThreshold="-100">
 		<!-- <img class="absolute z-10  portrait:hidden " src={bgLinesPortrait} alt="backgroundlines" /> -->
-		<img
+		<!-- <img
 			class="absolute z-10 landscape:hidden   "
 			style:transform={isVisible
 				? `translateX(${derivedTranslate}%) scale(10.0)`
 				: 'translateX(-50%) scale(10.0)'}
 			src={bgLinesPortrait}
 			alt="backgroundlines"
-		/>
-		<img
+		/> -->
+		<!-- <img
 			class="absolute z-10 portrait:hidden  "
 			style:transform={isVisible
 				? `translateX(${derivedTranslate}%) scale(3.0)`
 				: 'translateX(-50%) scale(10.0)'}
 			src={bgLinesPortrait}
 			alt="backgroundlines"
-		/>
+		/> -->
 
 		<div class="flex flex-col items-center justify-center text-center">
-			{#if derivedTranslate > -250 && derivedTranslate < -50}
+			<div
+				style:transform={isVisible
+					? `translateY(${(scroll - 400) * speed}px)`
+					: `translateY(-400px)`}
+				class=" textClamp relative z-20 mb-2 flex px-[8%] font-satoshi font-extrabold text-black"
+			>
+				We are here to help you:
+			</div>
+			{#if derivedTranslate > -200}
 				<div
+					in:blur={{ duration: 600, delay: 0, easing: sineInOut }}
 					style:transform={isVisible
-						? `translateY(${(scroll - 500) * speed}px)`
+						? `translateY(${(scroll - 400) * speed}px)`
 						: `translateY(-400px)`}
-					class=" textClamp relative z-20 mb-2 flex px-[8%] font-satoshi font-extrabold text-black"
+					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold  text-bright"
 				>
-					We are here to help you:
+					find your market,
 				</div>
-				{#if derivedTranslate > -250}
-					<div
-						in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
-						style:transform={isVisible
-							? `translateY(${(scroll - 500) * speed}px)`
-							: `translateY(-400px)`}
-						class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold italic text-bright"
-					>
-						identify inefficienies,
-					</div>
-				{/if}
-				{#if derivedTranslate > -170}
-					<div
-						in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
-						style:transform={isVisible
-							? `translateY(${(scroll - 500) * speed}px)`
-							: `translateY(-400px)`}
-						class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold italic text-bright"
-					>
-						create a roadmap,
-					</div>
-				{/if}
-
-				{#if derivedTranslate > -100}
-					<div
-						in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
-						style:transform={isVisible
-							? `translateY(${(scroll - 500) * speed}px)`
-							: `translateY(-400px)`}
-						class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold italic text-bright"
-					>
-						and drive growth.
-					</div>
-				{/if}
 			{/if}
+			{#if derivedTranslate > -125}
+				<div
+					in:blur={{ duration: 600, delay: 0, easing: sineInOut }}
+					style:transform={isVisible
+						? `translateY(${(scroll - 400) * speed}px)`
+						: `translateY(-400px)`}
+					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold  text-bright"
+				>
+					tailor your message,
+				</div>
+			{/if}
+
 			{#if derivedTranslate > -50}
+				<div
+					in:blur={{ duration: 600, delay: 0, easing: sineInOut }}
+					style:transform={isVisible
+						? `translateY(${(scroll - 400) * speed}px)`
+						: `translateY(-400px)`}
+					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold  text-bright"
+				>
+					and drive growth.
+				</div>
+			{/if}
+
+			<!-- {#if derivedTranslate > -50}
 				<div
 					class=" textClamp relative z-20 mb-2 flex translate-y-[-400px] px-[8%] font-satoshi font-extrabold text-black"
 				>
@@ -129,25 +128,25 @@ derived translate: {derivedTranslate}
 
 				<div
 					in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
-					class=" textClampSmall relative z-20 flex translate-y-[-400px] px-[8%] font-satoshi font-semibold italic text-bright"
+					class=" textClampSmall relative z-20 flex translate-y-[-400px] px-[8%] font-satoshi font-semibold  text-bright"
 				>
-					identify inefficienies,
+					identify inefficiencies,
 				</div>
 
 				<div
 					in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
-					class=" textClampSmall relative z-20 flex translate-y-[-400px] px-[8%] font-satoshi font-semibold italic text-bright"
+					class=" textClampSmall relative z-20 flex translate-y-[-400px] px-[8%] font-satoshi font-semibold  text-bright"
 				>
 					create a roadmap,
 				</div>
 
 				<div
 					in:blur={{ duration: 500, delay: 0, easing: sineInOut }}
-					class=" textClampSmall relative z-20 flex translate-y-[-400px] px-[8%] font-satoshi font-semibold italic text-bright"
+					class=" textClampSmall relative z-20 flex translate-y-[-400px] px-[8%] font-satoshi font-semibold  text-bright"
 				>
 					and drive growth.
 				</div>
-			{/if}
+			{/if} -->
 		</div>
 	</InView>
 </div>

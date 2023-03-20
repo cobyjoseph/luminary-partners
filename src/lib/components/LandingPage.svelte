@@ -14,6 +14,7 @@
 	});
 </script>
 
+
 {#if mountAnimations}
 	<div class="absolute bottom-0 left-0 h-[70vh] w-[70vh] overflow-hidden">
 		<div
@@ -135,6 +136,10 @@
 {/if}
 
 <style>
+	/* .backgroundImage {
+		background-image: url;
+	} */
+
 	.roundingClamp {
 		border-radius: clamp(0.2rem, 2vw + 1rem, 7rem);
 	}
