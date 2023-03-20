@@ -1,19 +1,19 @@
 <script lang="ts">
-	import bgLines from '$lib/assets/patterns/background-lines-v0.1.svg';
-	import bgLinesPortrait from '$lib/assets/patterns/portrait-background-lines-v0.3.svg';
+	import bgLines from '$lib/assets/patterns/background-lines-v0.4.svg';
+	import bgLinesPortrait from '$lib/assets/patterns/background-lines-v0.6.svg';
 	import InView from '$lib/components/InView.svelte';
 	import { landingPageHeightInitial } from '$lib/stores/heightStore';
-	import { derived } from 'svelte/store';
 
 	let colorBlue = 'blue';
 	let colorRed = 'red';
 
 	let scroll: number;
-	let speed = 0.5;
+	let speed = 0.6;
+	let speed2 = 0.7;
 	let landingPageHeight;
 	let containerHeight;
 
-	$: derivedTranslate = ((scroll - landingPageHeight) / containerHeight) * 3 * 100 - 200;
+	$: derivedTranslate = ((scroll * speed2 - landingPageHeight) / containerHeight) * 3 * 100 - 100;
 
 	landingPageHeightInitial.subscribe((value) => {
 		landingPageHeight = value;
@@ -50,9 +50,17 @@ scroll amount: {scroll}
 	<InView let:isVisible yThreshold="-100">
 		<!-- <img class="absolute z-10  portrait:hidden " src={bgLinesPortrait} alt="backgroundlines" /> -->
 		<img
-			class="absolute z-10 bg-blue-300  "
+			class="absolute z-10 landscape:hidden   "
 			style:transform={isVisible
 				? `translateX(${derivedTranslate}%) scale(10.0)`
+				: 'translateX(-500%) scale(10.0)'}
+			src={bgLinesPortrait}
+			alt="backgroundlines"
+		/>
+		<img
+			class="absolute z-10 portrait:hidden  "
+			style:transform={isVisible
+				? `translateX(${derivedTranslate}%) scale(5.0)`
 				: 'translateX(-500%) scale(10.0)'}
 			src={bgLinesPortrait}
 			alt="backgroundlines"
@@ -60,11 +68,9 @@ scroll amount: {scroll}
 
 		<div class="flex justify-center">
 			<div
-				style:color={isVisible ? `${colorRed}` : 'blue'}
 				style:transform={isVisible ? `translateY(${(scroll - 500) * speed}px)` : `translateY(0px)`}
-				class=" relative z-20 px-[8%] font-satoshi text-3xl font-extrabold text-secondaryDark"
+				class=" relative z-20 px-[8%] font-satoshi text-3xl font-extrabold text-black"
 			>
-				{isVisible}
 				Your partner for:
 			</div>
 		</div>
