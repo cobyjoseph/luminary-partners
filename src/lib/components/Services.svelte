@@ -13,7 +13,7 @@
 	let landingPageHeight;
 	let containerHeight;
 
-	$: derivedTranslate = ((scroll - landingPageHeight) / containerHeight) * 2.6 * 100 - 200;
+	$: derivedTranslate = ((scroll - landingPageHeight) / containerHeight) * 3 * 100 - 200;
 
 	landingPageHeightInitial.subscribe((value) => {
 		landingPageHeight = value;
@@ -50,8 +50,10 @@ scroll amount: {scroll}
 	<InView let:isVisible yThreshold="-100">
 		<!-- <img class="absolute z-10  portrait:hidden " src={bgLinesPortrait} alt="backgroundlines" /> -->
 		<img
-			style:transform={isVisible ? `translateY(-${derivedTranslate}%)` : `translateX(-300%)`}
-			class="absolute z-10  scale-[1000%] "
+			class="absolute z-10 bg-blue-300  "
+			style:transform={isVisible
+				? `translateX(-200%) scale(10.0)`
+				: 'translateX(-500%) scale(10.0)'}
 			src={bgLinesPortrait}
 			alt="backgroundlines"
 		/>
@@ -68,8 +70,8 @@ scroll amount: {scroll}
 		</div>
 	</InView>
 </div>
-''
 
+<!-- translateX(-${derivedTranslate}%) scale(10.0) -->
 <style>
 	.heightClass {
 		min-height: 100vh;
