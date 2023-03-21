@@ -29,13 +29,17 @@ derivedTranslate: {derivedTranslate}
 <div class="tallerHeightClass sticky" bind:clientHeight={containerHeight}>
 	<InView let:isVisible yThreshold="-100">
 		<div class="heightClass relative flex items-center justify-center">
-			<div class="z-20 flex flex-col gap-6">
-				<div class="z-20 flex font-satoshi text-4xl font-extrabold text-white">
-					Cut through the noise
+			<div
+				class="justicy-center z-20 flex flex-col items-center  gap-6 px-[8%] font-satoshi text-white"
+			>
+				<div class="textClamp z-20 flex text-center  font-extrabold ">Cut through the noise</div>
+				<div class="textClampSmall text-center font-thin ">
+					With the vast amount of content being produced every day, it is increasingly challenging
+					to stand out and capture the attention of your target audience. We can help.
 				</div>
 				<div class="flex justify-center">
 					<div
-						class="textSmallClamp z-20 mt-2 flex items-center justify-center gap-1 rounded-lg bg-bright px-4 py-3 font-bold text-white hover:bg-base hover:text-[#2155FF]  "
+						class="textSmallClamp z-20 mt-2 flex items-center justify-center gap-1 rounded-sm bg-bright px-4 py-3 font-bold text-white hover:bg-base hover:text-[#2155FF]  "
 					>
 						<div class="flex">Let's talk</div>
 
@@ -58,7 +62,7 @@ derivedTranslate: {derivedTranslate}
 			</div>
 
 			<div class="backgroundPhoto absolute  h-full w-full " />
-			<div class="absolute z-0 h-full w-full  bg-slate-900 opacity-50 " />
+			<div class="absolute z-0 h-full w-full  bg-slate-900 opacity-70 " />
 		</div>
 	</InView>
 </div>
@@ -84,5 +88,14 @@ derivedTranslate: {derivedTranslate}
 	.textSmallClamp {
 		font-size: clamp(1rem, 0.8vw + 0.4rem, 2.5rem);
 		line-height: normal;
+	}
+
+	.textClamp {
+		font-size: clamp(3rem, 5vw + 1rem, 15rem);
+		line-height: clamp(3rem, 5vw + 1rem, 7rem);
+	}
+	.textClampSmall {
+		font-size: clamp(1.2rem, 1.5vw + 0.5rem, 5rem);
+		line-height: clamp(1.6rem, 1.5vw + 1rem, 4rem);
 	}
 </style>
