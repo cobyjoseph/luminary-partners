@@ -48,24 +48,24 @@
 				<div class="flex text-xl font-normal text-bright  ">{i.name}</div>
 				<div class=" flex font-thin text-textLight  ">{i.role}</div>
 				<div
-					class="mt-2 flex items-center justify-center gap-1 rounded-sm bg-secondaryDark px-4 py-1 text-center text-xs font-thin text-white"
+					class="mt-2 flex items-center justify-center gap-1 rounded-sm bg-secondaryDark px-4 pt-[0.3rem] pb-[0.4rem] text-center text-xs font-thin text-white"
 				>
 					<div class="flex">See more</div>
-					
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							fill="none"
-							viewBox="0 0 28 18"
-							stroke-width="1.5"
-							stroke="currentColor"
-							class="h-3 w-3 hover:stroke-secondaryDark flex"
-						>
-							<path
-								stroke-linecap="round"
-								stroke-linejoin="round"
-								d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
-							/>
-						</svg>
+
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 28 18"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="flex h-3 w-3 hover:stroke-secondaryDark"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+						/>
+					</svg>
 				</div>
 			</div>
 		</div>

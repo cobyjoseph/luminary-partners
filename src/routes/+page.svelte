@@ -53,17 +53,6 @@
 
 <Footer />
 
-<div class="  h-[20rem] w-full ">
-	<div class="customSticky   h-[3rem] bg-green-400">inner box</div>
-</div>
-
-<div class="h-[20rem] bg-red-500" />
-<!-- <div class="customHeight relative px-[8%]">
-	<AboutUs />
-	<div class="absolute  inset-0 -z-20 w-full bg-secondaryLight " />
-</div> -->
-
-<!-- <FAQPage /> -->
 <style>
 	.customSticky {
 		position: sticky;

@@ -2,7 +2,7 @@
 	<div class="  font-satoshi text-2xl font-thin text-textLight">
 		Get in touch using the form or feel free to reach us at <a
 			href="mailto:coby.joseph@gmail.com"
-			class="text-[#566977]">contact@luminarypartners.com</a
+			class="text-secondaryDark">contact@luminarypartners.com</a
 		>.
 	</div>
 
@@ -12,9 +12,9 @@
 		action="?/contactAction"
 	>
 		<div class=" flex flex-col">
-			<div class="text-sm font-bold text-[#566977] ">NAME</div>
+			<div class="text-sm font-bold text-secondaryDark ">NAME</div>
 			<input
-				class="mt-1 rounded-sm border border-b-bright    bg-[#566977] bg-opacity-30 p-2"
+				class="mt-1 rounded-sm border border-b-bright    bg-secondaryDark bg-opacity-30 p-2"
 				type="text"
 				name="name"
 				placeholder="Full name"
@@ -22,9 +22,9 @@
 			/>
 		</div>
 		<div class="flex flex-col">
-			<div class="text-sm font-bold  text-[#566977] ">EMAIL</div>
+			<div class="text-sm font-bold  text-secondaryDark ">EMAIL</div>
 			<input
-				class="mt-1 rounded-sm  border border-b-bright  bg-[#566977] bg-opacity-30 p-2"
+				class="mt-1 rounded-sm  border border-b-bright  bg-secondaryDark bg-opacity-30 p-2"
 				type="email"
 				name="email"
 				placeholder="Email"
@@ -33,11 +33,11 @@
 		</div>
 		<div class="flex w-full flex-col ">
 			<div class="">
-				<div class="text-sm font-bold text-[#566977] ">MESSAGE</div>
+				<div class="text-sm font-bold text-secondaryDark ">MESSAGE</div>
 				<textarea
 					name="message"
 					rows="3"
-					class="mt-1 min-w-full rounded-sm  border border-b-bright   bg-[#566977] bg-opacity-30 p-2"
+					class="mt-1 min-w-full rounded-sm  border border-b-bright   bg-secondaryDark bg-opacity-30 p-2"
 					placeholder="Let us know how we can help."
 				/>
 			</div>
