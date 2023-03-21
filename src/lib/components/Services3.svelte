@@ -27,10 +27,10 @@
 <svelte:window bind:scrollY={scroll} />
 
 <!-- this is the grandparet: -->
-<div class="tallerHeightClass relative  p-3 " bind:clientHeight={containerHeight}>
+<div class="tallerHeightClass relative   " bind:clientHeight={containerHeight}>
 	<!-- this is the parent: -->
 
-	<div class="heightClass sticky top-4 h-screen w-full overflow-hidden bg-opacity-50  ">
+	<div class="heightClass sticky top-0 h-screen w-full overflow-hidden bg-opacity-50  ">
 		<div
 			style:transform={derivedTranslate > 0
 				? `scale(${derivedTranslate ** amplify + 100}%)`
