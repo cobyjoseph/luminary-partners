@@ -29,25 +29,28 @@
 </script>
 
 <!-- put a smaller max width maybe for big screen sizes - then you won't have to scale everything infinitely -->
-
-{#each staffData as i}
-	<div class="flex gap-2 items-center  sm:flex-col ">
-		<div
-			class="relative w-[10rem] h-[13rem] customTransition rounded-b-[100vw] overflow-clip hover:scale-105 flex  "
-		>
-			<div class="backgroundPhotoTexture w-[10rem] h-[10rem] absolute bottom-0 rounded-t-full  " />
-			<img
-				src={i.photoSRC}
-				alt="person headshot"
-				class="aboslute w-[10rem] h-[10rem] absolute bottom-0 -translate-y-1 scale-[130%] customTransition hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
-			/>
+<div class="flex flex-wrap justify-between gap-6 mt-6">
+	{#each staffData as i}
+		<div class="flex flex-col items-center gap-2 ">
+			<div
+				class="customTransition relative flex h-[13rem] min-w-[10rem]  overflow-clip rounded-b-[100vw] hover:scale-105  "
+			>
+				<div
+					class="backgroundPhotoTexture absolute bottom-0 h-[10rem] w-[10rem] rounded-t-full  "
+				/>
+				<img
+					src={i.photoSRC}
+					alt="person headshot"
+					class="aboslute customTransition absolute bottom-0 h-[10rem] w-[10rem] -translate-y-1 scale-[130%] hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+				/>
+			</div>
+			<div class="flex flex-col sm:items-center ">
+				<div class="flex text-xl font-normal text-bright  ">{i.name}</div>
+				<div class=" font-thin flex text-textLight  ">{i.role}</div>
+			</div>
 		</div>
-		<div class="flex flex-col sm:items-center ">
-			<div class="flex text-xl text-white font-bold  ">{i.name}</div>
-			<div class="flex text-sm text-white   ">{i.role}</div>
-		</div>
-	</div>
-{/each}
+	{/each}
+</div>
 
 <style>
 	.customTransition {

@@ -9,6 +9,8 @@
 	import { pages4HeightInitial } from '$lib/stores/heightStore';
 	import Services2 from '$lib/components/Services2.svelte';
 	import Services3 from '$lib/components/Services3.svelte';
+	import OurTeam from '$lib/components/OurTeam.svelte';
+	import Contact from '$lib/components/Contact.svelte';
 </script>
 
 <svelte:head>
@@ -44,13 +46,16 @@
 
 <Services3 />
 
-<div class="customHeight relative px-[8%]">
+<OurTeam />
+
+<Contact />
+
+<!-- <div class="customHeight relative px-[8%]">
 	<AboutUs />
 	<div class="absolute  inset-0 -z-20 w-full bg-secondaryLight " />
-</div>
+</div> -->
 
-<FAQPage />
-
+<!-- <FAQPage /> -->
 <style>
 	.backgroundPhoto {
 		background-image: url($lib/assets/bg-image2.jpg);
