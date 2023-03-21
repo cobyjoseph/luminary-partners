@@ -11,6 +11,7 @@
 	import Services3 from '$lib/components/Services3.svelte';
 	import OurTeam from '$lib/components/OurTeam.svelte';
 	import Contact from '$lib/components/Contact.svelte';
+	import Footer from '$lib/components/Footer.svelte';
 </script>
 
 <svelte:head>
@@ -49,6 +50,8 @@
 <OurTeam />
 
 <Contact />
+
+<Footer />
 
 <!-- <div class="customHeight relative px-[8%]">
 	<AboutUs />
