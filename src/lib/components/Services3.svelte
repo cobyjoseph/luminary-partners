@@ -26,20 +26,25 @@
 
 derivedTranslate: {derivedTranslate}
 
-<div class="tallerHeightClass sticky" bind:clientHeight={containerHeight}>
-	<InView let:isVisible yThreshold="-100">
-		<div class="heightClass relative flex items-center justify-center">
+<!-- this is the grandparet: -->
+<div class="tallerHeightClass relative  p-3 " bind:clientHeight={containerHeight}>
+	<!-- this is the parent: -->
+	<div class="heightClass sticky top-4 h-screen w-full bg-opacity-50  outline">
+		<div
+			class="backgroundPhotoMask absolute top-0 z-40 flex h-full w-full flex-col items-center justify-center"
+		/>
+		<div class="backgroundPhoto flex h-full w-full flex-col items-center justify-center">
 			<div
-				class="justicy-center z-20 flex flex-col items-center  gap-6 px-[8%] font-satoshi text-white"
+				class="justicy-center  flex flex-col items-center  gap-6 px-[8%] font-satoshi text-white"
 			>
-				<div class="textClamp z-20 flex text-center  font-extrabold ">Cut through the noise</div>
-				<div class="textClampSmall text-center font-thin ">
+				<div class="textClamp  z-20 flex  text-center font-extrabold">Cut through the noise</div>
+				<div class="textClampSmall z-20 text-center font-thin">
 					With the vast amount of content being produced every day, it is increasingly challenging
 					to stand out and capture the attention of your target audience. We can help.
 				</div>
-				<div class="flex justify-center">
+				<div class="z-20 flex justify-center">
 					<div
-						class="textSmallClamp z-20 mt-2 flex items-center justify-center gap-1 rounded-sm bg-bright px-4 py-3 font-bold text-white hover:bg-base hover:text-[#2155FF]  "
+						class="textSmallClamp  mt-2 flex items-center justify-center gap-1 rounded-sm bg-bright px-4 py-3 font-bold text-white hover:bg-base hover:text-[#2155FF]  "
 					>
 						<div class="flex">Let's talk</div>
 
@@ -59,17 +64,27 @@ derivedTranslate: {derivedTranslate}
 						</svg>
 					</div>
 				</div>
+				<!-- <div class="absolute top-0  h-full  w-full bg-slate-900 opacity-70" /> -->
 			</div>
-
-			<div class="backgroundPhoto absolute  h-full w-full " />
-			<div class="absolute z-0 h-full w-full  bg-slate-900 opacity-70 " />
 		</div>
+	</div>
+
+	<InView let:isVisible yThreshold="-100">
+		<div class="heightClass relative flex items-center justify-center" />
 	</InView>
+	<!-- <div class="backgroundPhoto absolute top-0  h-full w-full " /> -->
 </div>
 
 <style>
 	.backgroundPhoto {
-		background-image: url($lib/assets/lightBulb.jpg);
+		background-image: url($lib/assets/bg-images/lightBulb.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	.backgroundPhotoMask {
+		background-image: url($lib/assets/bg-images/luminary-logo-mask-v0.1.png);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;

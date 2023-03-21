@@ -1,4 +1,4 @@
-<div class="mt-[4rem] sm:grid sm:grid-cols-2 items-center gap-12 px-[8%]">
+<div class="mt-[4rem] items-center gap-[5rem] px-[8%] sm:grid sm:grid-cols-2">
 	<div class="  font-satoshi text-2xl font-thin text-textLight">
 		Get in touch using the form or feel free to reach us at <a
 			href="mailto:coby.joseph@gmail.com"
@@ -7,7 +7,7 @@
 	</div>
 
 	<form
-		class="text-primary  mt-4 flex w-full flex-col flex-nowrap gap-3 "
+		class="text-primary  mt-10 flex w-full flex-col flex-nowrap gap-5 sm:mt-0 "
 		method="POST"
 		action="?/contactAction"
 	>

@@ -29,7 +29,7 @@
 </script>
 
 <!-- put a smaller max width maybe for big screen sizes - then you won't have to scale everything infinitely -->
-<div class="flex flex-wrap justify-between gap-6 mt-6">
+<div class="mt-6 flex flex-wrap justify-between gap-6">
 	{#each staffData as i}
 		<div class="flex flex-col items-center gap-2 ">
 			<div
@@ -44,9 +44,29 @@
 					class="aboslute customTransition absolute bottom-0 h-[10rem] w-[10rem] -translate-y-1 scale-[130%] hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
 				/>
 			</div>
-			<div class="flex flex-col sm:items-center ">
+			<div class="flex flex-col items-center ">
 				<div class="flex text-xl font-normal text-bright  ">{i.name}</div>
-				<div class=" font-thin flex text-textLight  ">{i.role}</div>
+				<div class=" flex font-thin text-textLight  ">{i.role}</div>
+				<div
+					class="mt-2 flex items-center justify-center gap-1 rounded-sm bg-secondaryDark px-4 py-1 text-center text-xs font-thin text-white"
+				>
+					<div class="flex">See more</div>
+					
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 28 18"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class="h-3 w-3 hover:stroke-secondaryDark flex"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
+							/>
+						</svg>
+				</div>
 			</div>
 		</div>
 	{/each}

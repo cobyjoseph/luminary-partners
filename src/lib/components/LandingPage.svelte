@@ -3,10 +3,6 @@
 	import { draw, fly, scale, slide } from 'svelte/transition';
 	import { sineInOut, quintIn, backOut } from 'svelte/easing';
 
-	import heroImgBg from '$lib/assets/hero-with-bg.png';
-	import heroImg from '$lib/assets/hero-image-cut.png';
-	import heroSliced from '$lib/assets/hero-sliced-4.png';
-
 	let mountAnimations = false;
 
 	onMount(() => {

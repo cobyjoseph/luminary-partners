@@ -10,7 +10,7 @@
 	let colorRed = 'red';
 
 	let scroll: number;
-	let speed = 0.6;
+	let speed = 0.7;
 	let speed2 = 1;
 	let landingPageHeight;
 	let containerHeight;
@@ -163,7 +163,7 @@
 	}
 
 	.heightClass {
-		min-height: 100vh;
-		min-height: 100svh;
+		min-height: 120vh;
+		min-height: 120svh;
 	}
 </style>

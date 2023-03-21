@@ -4,8 +4,8 @@
 	import twitter from '$lib/assets/footer/twitter-icon.svg';
 </script>
 
-<div class="mt-[3rem] w-full bg-secondaryDark px-[8%] py-[1rem] font-satoshi text-white">
-	<div class="grid grid-cols-2  gap-4 sm:grid sm:grid-cols-4 ">
+<div class="mt-[5rem] w-full bg-secondaryDark px-[8%] py-[2.5rem] font-satoshi text-white ">
+	<div class="grid grid-cols-2  gap-10 sm:grid sm:grid-cols-4  ">
 		<div class="flex items-start  justify-center gap-2 ">
 			<div class="flex w-[2.5rem] sm:w-[2.5rem]   ">
 				<svg
