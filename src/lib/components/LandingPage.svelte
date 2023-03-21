@@ -14,7 +14,7 @@
 	});
 </script>
 
-{#if mountAnimations}
+<!-- {#if mountAnimations}
 	<div class="absolute bottom-0 left-0 h-[70vh] w-[70vh] overflow-hidden">
 		<div
 			in:scale
@@ -76,25 +76,25 @@
 			/>
 		</svg>
 	</div>
-{/if}
+{/if} -->
 
 {#if mountAnimations}
-	<div class=" relative z-20 mt-5 flex flex-col gap-5 font-satoshi">
-		<div class="flex flex-col items-center gap-12 text-white sm:grid sm:grid-cols-2 ">
-			<div class="textSmallClamp flex flex-col  gap-3 ">
+	<div class="relative z-20 mt-[10vh] flex flex-col items-center justify-center  font-satoshi">
+		<div class="flex max-w-[40rem] flex-col items-center gap-12 text-center  text-white ">
+			<div class="textSmallClamp flex flex-col  items-center justify-center gap-7  ">
 				<div
 					in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
-					class="textClamp font-satoshi font-extrabold  text-white "
+					class="textClamp font-satoshi font-extrabold leading-10  text-white  sm:px-[5vw]  "
 				>
-					Unlocking Your Business's Full Potential
+					Strategic marketing for innovative companies
 				</div>
 				<div in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}>
-					We provide expert guidance to optimize your strategy, operations, and performance driving
-					growth and success.
+					We provide comprehensive marketing and branding services to help you stand out from the
+					crowd and drive home your message.
 				</div>
 				<div in:fly={{ duration: 300, delay: 150, easing: sineInOut, y: 100 }} class="flex">
 					<div
-						class="textSmallClamp mt-2 flex  items-center justify-center gap-1 rounded-lg bg-base px-4 py-3 font-bold text-secondaryDark hover:bg-base hover:text-[#2155FF]  "
+						class="textSmallClamp mt-2 flex items-center justify-center gap-1 rounded-lg bg-bright px-4 py-3 font-bold text-white hover:bg-base hover:text-[#2155FF]  "
 					>
 						<div class="flex">Learn More</div>
 
@@ -116,20 +116,15 @@
 				</div>
 			</div>
 
-			<div class="overflow-hidden ">
+			<!-- <div class="overflow-hidden ">
 				<img
 					src={heroSliced}
 					alt="business people in a meeting"
 					in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
 					class="flex"
 				/>
-				<!-- <img
-					src={heroImg}
-					alt="business people in a meeting"
-					in:fly={{ duration: 500, delay: 0, easing: sineInOut, y: 100 }}
-					class="flex "
-				/> -->
-			</div>
+			
+			</div> -->
 		</div>
 	</div>
 {/if}
@@ -145,7 +140,6 @@
 
 	.textClamp {
 		font-size: clamp(1.7rem, 2.5vw + 0.5rem, 3rem);
-		line-height: normal;
 	}
 
 	.textSmallClamp {

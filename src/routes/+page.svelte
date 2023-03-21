@@ -6,7 +6,9 @@
 	import AboutUs from '$lib/components/AboutUs.svelte';
 	import FAQPage from '$lib/components/FAQPage.svelte';
 	import { landingPageHeightInitial } from '$lib/stores/heightStore';
+	import { pages4HeightInitial } from '$lib/stores/heightStore';
 	import Services2 from '$lib/components/Services2.svelte';
+	import Services3 from '$lib/components/Services3.svelte';
 </script>
 
 <svelte:head>
@@ -20,23 +22,27 @@
 	class="absolute -z-10 h-[10rem] w-full -translate-y-[2rem] bg-gradient-to-b from-black to-secondaryDark opacity-30 blur-lg"
 />
 
-<div bind:clientHeight={$landingPageHeightInitial}>
-	<div class="backgroundPhoto w-full h-full absolute -z-20 " />
-	<div class="bg-slate-900 absolute w-full h-full  -z-10 opacity-60 " />
+<div bind:clientHeight={$pages4HeightInitial}>
+	<div bind:clientHeight={$landingPageHeightInitial}>
+		<div class="backgroundPhoto absolute z-0 h-full w-full " />
+		<div class="absolute z-0 h-full w-full  bg-slate-900 opacity-80 " />
 
-	<div class="customHeight relative px-[8%]">
-		<Menu />
+		<div class="customHeight relative px-[8%]">
+			<Menu />
 
-		<LandingPage />
-		<div class="absolute  inset-0 -z-20 w-full bg-secondaryLight " />
+			<LandingPage />
+			<!-- <div class="absolute  inset-0 -z-20 w-full bg-secondaryLight " /> -->
+		</div>
+
+		<!-- <Reports /> -->
 	</div>
 
-	<!-- <Reports /> -->
+	<Services1 />
+
+	<Services2 />
 </div>
 
-<Services1 />
-
-<Services2 />
+<Services3 />
 
 <div class="customHeight relative px-[8%]">
 	<AboutUs />
@@ -46,6 +52,13 @@
 <FAQPage />
 
 <style>
+	.backgroundPhoto {
+		background-image: url($lib/assets/bg-image2.jpg);
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
 	.customHeight {
 		min-height: 100vh;
 		min-height: 100svh;

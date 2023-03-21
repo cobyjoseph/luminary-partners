@@ -35,7 +35,7 @@
 		</div>
 		<div class="flex flex-col text-xl sm:text-xl font-bold font-josefinSans mt-1  ">
 			<div class="flex ">Luminary</div>
-			<div class="flex -mt-[0.4rem]">Partners</div>
+			<div class="flex -mt-[0.4rem]">Insights</div>
 		</div>
 	</div>
 
