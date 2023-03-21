@@ -29,7 +29,7 @@
 </script>
 
 <!-- put a smaller max width maybe for big screen sizes - then you won't have to scale everything infinitely -->
-<div class="mt-6 flex flex-wrap justify-between gap-6">
+<div class="mt-[3rem] flex flex-wrap justify-between gap-6">
 	{#each staffData as i}
 		<div class="flex flex-col items-center gap-2 ">
 			<div

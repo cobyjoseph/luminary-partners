@@ -54,11 +54,6 @@
 <Footer />
 
 <style>
-	.customSticky {
-		position: sticky;
-		top: 0;
-	}
-
 	.backgroundPhoto {
 		background-image: url($lib/assets/bg-images/bg-image2.jpg);
 		background-position: center;
