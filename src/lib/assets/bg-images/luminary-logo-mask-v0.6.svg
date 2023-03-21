@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 1920 1080" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g id="cut-out-letter" serif:id="cut out letter">
+    </g>
+    <path d="M1920,0L1920,1080L0,1080L0,0L1920,0ZM1071.39,433.733C1071.39,422.666 1062.41,413.682 1051.34,413.682L868.656,413.682C857.589,413.682 848.605,422.666 848.605,433.733L848.605,646.267C848.605,657.334 857.589,666.318 868.656,666.318L1051.34,666.318C1062.41,666.318 1071.39,657.334 1071.39,646.267L1071.39,433.733Z" style="fill:rgb(228,230,238);"/>
+    <g transform="matrix(0.394081,0,0,0.394081,702.144,356.96)">
+        <path d="M620.349,283.301L639.692,283.301L639.692,592.952L721.727,592.952L721.727,612.75L620.463,612.75L620.349,283.301Z" style="fill:rgb(228,230,238);"/>
+    </g>
+    <g transform="matrix(0.394081,0,0,0.394081,702.144,356.96)">
+        <path d="M603.622,612.286L603.622,283.327L550.782,283.327L550.782,645.646L757.861,645.646L757.861,559.265L654.094,559.265L654.094,578.016L739.019,578.016L739.019,627.532L568.623,627.532L568.623,301.622L583.733,301.622L583.733,612.75L603.622,612.286Z" style="fill:rgb(228,230,238);"/>
+    </g>
+</svg>

@@ -3,6 +3,7 @@
 	import { pages4HeightInitial } from '$lib/stores/heightStore';
 	import { fly, blur } from 'svelte/transition';
 	import { sineInOut } from 'svelte/easing';
+	import { derived } from 'svelte/store';
 
 	let colorBlue = 'blue';
 	let colorRed = 'red';
@@ -10,6 +11,7 @@
 	let scroll: number;
 	let speed = 0.6;
 	let speed2 = 1;
+	let amplify = 1.9;
 	let abovePagesHeight;
 	let containerHeight;
 
@@ -24,16 +26,21 @@
 
 <svelte:window bind:scrollY={scroll} />
 
-derivedTranslate: {derivedTranslate}
-
 <!-- this is the grandparet: -->
 <div class="tallerHeightClass relative  p-3 " bind:clientHeight={containerHeight}>
 	<!-- this is the parent: -->
-	<div class="heightClass sticky top-4 h-screen w-full bg-opacity-50  outline">
+
+	<div class="heightClass sticky top-4 h-screen w-full overflow-hidden bg-opacity-50  ">
 		<div
-			class="backgroundPhotoMask absolute top-0 z-40 flex h-full w-full flex-col items-center justify-center"
+			style:transform={derivedTranslate > 0
+				? `scale(${derivedTranslate ** amplify + 100}%)`
+				: 'scale(1)'}
+			class="backgroundPhotoMask absolute top-0 z-40 flex h-full w-full "
 		/>
-		<div class="backgroundPhoto flex h-full w-full flex-col items-center justify-center">
+
+		<div
+			class="backgroundPhoto sticky top-0 flex h-full w-full flex-col items-center justify-center"
+		>
 			<div
 				class="justicy-center  flex flex-col items-center  gap-6 px-[8%] font-satoshi text-white"
 			>
@@ -64,14 +71,11 @@ derivedTranslate: {derivedTranslate}
 						</svg>
 					</div>
 				</div>
-				<!-- <div class="absolute top-0  h-full  w-full bg-slate-900 opacity-70" /> -->
+				<div class="absolute top-0  h-full  w-full bg-slate-900 opacity-60" />
 			</div>
 		</div>
 	</div>
 
-	<InView let:isVisible yThreshold="-100">
-		<div class="heightClass relative flex items-center justify-center" />
-	</InView>
 	<!-- <div class="backgroundPhoto absolute top-0  h-full w-full " /> -->
 </div>
 
@@ -84,7 +88,7 @@ derivedTranslate: {derivedTranslate}
 	}
 
 	.backgroundPhotoMask {
-		background-image: url($lib/assets/bg-images/luminary-logo-mask-v0.1.png);
+		background-image: url($lib/assets/bg-images/luminary-logo-mask-v0.3.svg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
