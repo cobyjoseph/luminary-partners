@@ -4,7 +4,7 @@
 	import img3 from '$lib/assets/services/Advertising.jpg';
 </script>
 
-<div class="heightClass bg-base px-[6%] mt-[-2rem] ">
+<div class="heightClass  bg-base px-[6%] mt-[-2rem] ">
 	<div class="flex justify-center ">
 		<div class=" flex w-[28vw] flex-col gap-4 ">
 			<img src={img1} alt="" class=" bg-contain" />
