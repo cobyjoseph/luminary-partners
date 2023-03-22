@@ -1,10 +1,16 @@
 <script lang="ts">
+	function scrollIntoView({ target }) {
+		const element = document.querySelector(target.getAttribute('href'));
+		if (!element) return;
+		element.scrollIntoView({
+			behavior: 'smooth'
+		});
+	}
 </script>
 
-
-<div class="flex justify-between text-white items-center py-5 ">
+<div class="flex items-center justify-between py-5 text-white ">
 	<div class="flex items-center gap-2">
-		<div class="w-[3rem] sm:w-[3rem] flex  ">
+		<div class="flex w-[3rem] sm:w-[3rem]  ">
 			<svg
 				width="100%"
 				height="100%"
@@ -33,23 +39,34 @@
 				</g>
 			</svg>
 		</div>
-		<div class="flex flex-col text-xl sm:text-xl font-bold font-josefinSans mt-1  ">
+		<div class="mt-1 flex flex-col font-josefinSans text-xl font-bold sm:text-xl  ">
 			<div class="flex ">Luminary</div>
-			<div class="flex -mt-[0.4rem]">Insights</div>
+			<div class="-mt-[0.4rem] flex">Insights</div>
 		</div>
 	</div>
 
-	<div class="flex gap-10 text-lg font-semibold font-satoshi">
+	<div class="flex gap-10 font-satoshi text-lg font-semibold">
 		<div class="fancy-link relative">About us</div>
 		<div class="fancy-link relative">Services</div>
 		<div class="fancy-link relative">FAQ</div>
-		<div class="fancy-link relative">Contact</div>
+		<a
+			href="#contact"
+			class="fancy-link  relative text-white"
+			on:click|preventDefault={scrollIntoView}
+		>
+			Contact
+		</a>
 	</div>
 </div>
 
 <style>
+	.fancy-link {
+		color: white;
+	}
+
 	.fancy-link::after {
 		content: '';
+
 		position: absolute;
 		left: 0;
 		bottom: 0;

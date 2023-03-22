@@ -1,8 +1,8 @@
-<div class="mt-[6rem] px-[8%]">
+<div id="contact" class="mt-[6rem] px-[8%]">
 	<div class=" font-satoshi text-4xl font-thin text-bright  ">Get in touch.</div>
 	<div class="items-center gap-[5rem]  sm:grid sm:grid-cols-2 mt-[3rem]">
 		<div class="  font-satoshi text-2xl font-thin text-textLight">
-			Get in touch using the form or feel free to reach us at <a
+			Contact us using the form or reach us at <a
 				href="mailto:coby.joseph@gmail.com"
 				class="text-secondaryDark">contact@luminarypartners.com</a
 			>.
