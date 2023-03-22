@@ -48,7 +48,7 @@
 				<div class="flex text-xl font-normal text-bright  ">{i.name}</div>
 				<div class=" flex font-thin text-textLight  ">{i.role}</div>
 				<div
-					class="mt-2 flex items-center justify-center gap-1 rounded-sm bg-secondaryDark px-4 pt-[0.3rem] pb-[0.4rem] text-center text-xs font-thin text-white"
+					class="mt-2 flex items-center justify-center gap-1 rounded-sm bg-secondaryDark pl-3 pr-2 pt-[0.3rem] pb-[0.4rem] text-center text-xs font-thin text-white"
 				>
 					<div class="flex">See more</div>
 

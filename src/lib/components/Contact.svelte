@@ -1,6 +1,6 @@
 <div id="contact" class="mt-[6rem] px-[8%]">
 	<div class=" font-satoshi text-4xl font-thin text-bright  ">Get in touch.</div>
-	<div class="items-center gap-[5rem]  sm:grid sm:grid-cols-2 mt-[3rem]">
+	<div class="mt-[3rem] items-center  gap-[5rem] sm:grid sm:grid-cols-2">
 		<div class="  font-satoshi text-2xl font-thin text-textLight">
 			Contact us using the form or reach us at <a
 				href="mailto:coby.joseph@gmail.com"
@@ -47,7 +47,7 @@
 			<div class="flex">
 				<button
 					type="submit"
-					class="mt-2 flex justify-center rounded-sm  bg-bright px-4 py-1  text-lg  font-semibold text-white "
+					class="mt-2 flex justify-center rounded-sm  bg-bright pr-5 pl-5 py-[0.5rem]  text-lg  font-semibold text-white "
 					>Send</button
 				>
 			</div>

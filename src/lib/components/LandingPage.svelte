@@ -90,7 +90,7 @@
 				</div>
 				<div in:fly={{ duration: 300, delay: 150, easing: sineInOut, y: 100 }} class="flex">
 					<div
-						class="textSmallClamp mt-2 flex items-center justify-center gap-1 rounded-sm bg-bright px-4 py-3 font-bold text-white hover:bg-base hover:text-[#2155FF]  "
+						class="textSmallClamp mt-2 flex items-center justify-center gap-1 rounded-sm bg-bright pr-5 pl-7 py-[0.7rem] font-bold text-white hover:bg-base hover:text-[#2155FF]  "
 					>
 						<div class="flex">Learn More</div>
 
