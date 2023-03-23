@@ -29,43 +29,30 @@
 </script>
 
 <!-- put a smaller max width maybe for big screen sizes - then you won't have to scale everything infinitely -->
-<div class="mt-[3rem] flex flex-wrap justify-between gap-6">
+<div
+	class="mt-[1rem] flex flex-wrap justify-between gap-6 sm:mt-[2rem] 2xl:justify-center 2xl:gap-[6rem]"
+>
 	{#each staffData as i}
 		<div class="flex flex-col items-center gap-2 ">
 			<div
-				class="customTransition relative flex h-[13rem] min-w-[10rem]  overflow-clip rounded-b-[100vw] hover:scale-105  "
+				class="customTransition relative flex h-[13rem] min-w-[8rem] overflow-clip  rounded-b-[100vw] hover:scale-105 sm:min-w-[10rem]  "
 			>
 				<div
-					class="backgroundPhotoTexture absolute bottom-0 h-[10rem] w-[10rem] rounded-t-full  "
+					class="backgroundPhotoTexture absolute bottom-0 h-[8rem] w-[8rem]   rounded-t-full sm:h-[10rem] sm:w-[10rem]  "
 				/>
 				<img
 					src={i.photoSRC}
 					alt="person headshot"
-					class="aboslute customTransition absolute bottom-0 h-[10rem] w-[10rem] -translate-y-1 scale-[130%] hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out   "
+					class="aboslute customTransition absolute bottom-0 h-[8rem] w-[8rem] -translate-y-1 scale-[130%] hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out sm:h-[10rem] sm:w-[10rem]   "
 				/>
 			</div>
 			<div class="flex flex-col items-center ">
 				<div class="flex text-xl font-normal text-bright  ">{i.name}</div>
 				<div class=" flex font-thin text-textLight  ">{i.role}</div>
 				<div
-					class="mt-2 flex items-center justify-center gap-1 rounded-md bg-bright px-4 pt-[0.3rem] pb-[0.4rem] text-center text-xs font-thin text-white"
+					class="mt-2 flex items-center justify-center gap-1 rounded-md bg-bright px-4 pt-[0.3rem] pb-[0.4rem] text-center text-xs font-thin text-white hover:cursor-pointer hover:bg-brightDark"
 				>
 					<div class="flex">See bio</div>
-
-					<!-- <svg
-						xmlns="http://www.w3.org/2000/svg"
-						fill="none"
-						viewBox="0 0 28 18"
-						stroke-width="1.5"
-						stroke="currentColor"
-						class="flex h-3 w-3 hover:stroke-secondaryDark"
-					>
-						<path
-							stroke-linecap="round"
-							stroke-linejoin="round"
-							d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
-						/>
-					</svg> -->
 				</div>
 			</div>
 		</div>

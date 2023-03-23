@@ -1,5 +1,13 @@
 <script lang="ts">
 	import logo from '$lib/assets/logo/luminary-partners-logo-v0.3.png';
+	import { backIn, sineIn } from 'svelte/easing';
+	import { blur } from 'svelte/transition';
+
+	let showMenu = false;
+
+	function handleMenu() {
+		showMenu = !showMenu;
+	}
 
 	function scrollIntoView({ target }) {
 		const element = document.querySelector(target.getAttribute('href'));
@@ -48,16 +56,92 @@
 	</div>
 
 	<div class="flex gap-10 font-satoshi text-lg font-semibold">
-		<div class="fancy-link relative">About us</div>
-		<div class="fancy-link relative">Services</div>
-		<div class="fancy-link relative">FAQ</div>
-		<a
-			href="#contact"
-			class="fancy-link  relative text-white"
-			on:click|preventDefault={scrollIntoView}
-		>
-			Contact
-		</a>
+		<div class="  flex  gap-20   ">
+			<!-- this extra div is so that I can put the menu svg and the menu names in the same div that makes the justify-between work. But then they also need to be in separate divs so the titles can be hidden on small -->
+			<div class="hidden gap-14 lg:flex ">
+				<a
+					href={'#services'}
+					class=" customUnderline   font-semibold"
+					on:click|preventDefault={scrollIntoView}>Services</a
+				>
+
+				<a
+					href={'#ourTeam'}
+					class=" customUnderline  font-semibold"
+					on:click|preventDefault={scrollIntoView}>Our team</a
+				>
+
+				<a
+					href={'#contact'}
+					class=" customUnderline  font-semibold"
+					on:click|preventDefault={scrollIntoView}>Contact</a
+				>
+			</div>
+
+			<!-- THIS IS MENU ICON -->
+			<div class="flex gap-8  lg:hidden ">
+				{#if !showMenu}
+					<button on:click={handleMenu} in:blur>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+							stroke-width="1.5"
+							stroke="currentColor"
+							class=" flex h-6 w-6"
+						>
+							<path
+								stroke-linecap="round"
+								stroke-linejoin="round"
+								d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+							/>
+						</svg>
+					</button>
+				{/if}
+
+				{#if showMenu}
+					<div class="relative">
+						<button on:click={handleMenu} in:blur>
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								fill="none"
+								viewBox="0 0 24 24"
+								stroke-width="1.5"
+								stroke="currentColor"
+								class="flex h-6 w-6"
+							>
+								<path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+							</svg>
+						</button>
+
+						<div
+							class="frostedBox absolute top-7 right-0 z-[300] grid w-[14rem] grid-cols-1 gap-4 self-stretch p-6"
+							in:blur={{ duration: 300, easing: sineIn }}
+						>
+							<a
+								href={'#services'}
+								class=" underlineMenu   font-semibold  "
+								on:click|preventDefault={scrollIntoView}>Services</a
+							>
+
+							<a
+								href={'#ourTeam'}
+								class=" underlineMenu  font-semibold"
+								on:click|preventDefault={scrollIntoView}
+								>Our team
+							</a>
+
+							<a
+								href={'#contact'}
+								class=" underlineMenu  font-semibold"
+								on:click|preventDefault={scrollIntoView}
+								>Contact
+							</a>
+						</div>
+					</div>
+				{/if}
+			</div>
+		</div>
 	</div>
 </div>
 
@@ -89,5 +173,14 @@
 		transform: scaleX(1);
 		-webkit-transform-origin: left;
 		transform-origin: left;
+	}
+
+	.frostedBox {
+		background: rgba(255, 255, 255, 0.45);
+		border-radius: 16px;
+		box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+		backdrop-filter: blur(8px);
+		-webkit-backdrop-filter: blur(8px);
+		border: 0.05rem solid rgba(255, 255, 255, 0.4);
 	}
 </style>

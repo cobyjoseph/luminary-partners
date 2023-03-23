@@ -49,11 +49,13 @@
 					With the vast amount of content being produced every day, it is increasingly challenging
 					to stand out and capture the attention of your target audience. We can help.
 				</div>
-				<div class="z-20 flex justify-center">
+				<!-- <div class="z-20 flex justify-center">
 					<div
-						class="textSmallClamp  mt-2 flex items-center justify-center gap-1 rounded-md bg-bright py-[0.7rem] pr-5 pl-7 font-bold text-white hover:bg-base hover:text-[#2155FF]  "
+						class="textSmallClamp mt-2  flex items-center justify-center gap-1 rounded-md bg-bright py-[0.7rem] pr-5 pl-7 font-bold text-white hover:bg-brightDark  hover:text-[#2155FF]  "
 					>
-						<div class="flex">Let's talk</div>
+						<a href={'#contact'} class=" flex" on:click|preventDefault={scrollIntoView}
+							>Let's talk</a
+						>
 
 						<svg
 							xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +72,7 @@
 							/>
 						</svg>
 					</div>
-				</div>
+				</div> -->
 				<div class="absolute top-0  h-full  w-full bg-slate-900 opacity-60" />
 			</div>
 		</div>

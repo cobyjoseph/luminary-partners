@@ -8,9 +8,9 @@
 	let imageHeight;
 </script>
 
-<div class="heightClass mt-[-2rem] bg-base px-[6%] ">
-	<div class="flex justify-center ">
-		<div class=" flex w-[28vw] flex-col gap-4 ">
+<div class="heightClass relative z-40 mt-[-2rem] justify-center bg-base px-[6%] ">
+	<div class="flex flex-col justify-center sm:flex-row sm:gap-0 gap-10 ">
+		<div class=" flex w-full flex-col gap-4 sm:w-[28vw] ">
 			<InView yThreshold="0" let:isVisible>
 				<div class="relative">
 					{#if !isVisible}
@@ -29,10 +29,10 @@
 				We help uncover valuable insights about your audience, competitors, and industry trends, to
 				drive your business forward with data-driven decisions.
 			</div>
-			<div class="h-[4rem] w-full" />
+			<div class="hidden h-[4rem] w-full sm:block" />
 		</div>
 
-		<div class=" mt-[2rem] flex w-[28vw] flex-col  gap-4">
+		<div class=" flex w-full flex-col gap-4 sm:mt-[2rem]  sm:w-[28vw]">
 			<InView yThreshold="50" let:isVisible>
 				<div class="relative">
 					{#if !isVisible}
@@ -50,10 +50,10 @@
 				Our design services help you leave a lasting impression with a brand tailored to showcase
 				your unique identity and captivate your audience.
 			</div>
-			<div class="h-[2rem] w-full" />
+			<div class="hidden h-[2rem] w-full sm:block" />
 		</div>
 
-		<div class=" mt-[4rem] flex w-[28vw] flex-col  gap-4">
+		<div class=" flex w-full flex-col gap-4 sm:mt-[4rem]  sm:w-[28vw]">
 			<InView yThreshold="100" let:isVisible>
 				<div class="relative">
 					{#if !isVisible}
