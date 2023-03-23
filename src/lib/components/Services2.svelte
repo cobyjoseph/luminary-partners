@@ -9,7 +9,7 @@
 </script>
 
 <div class="heightClass relative z-40 mt-[-2rem] justify-center bg-base px-[6%] ">
-	<div class="flex flex-col justify-center sm:flex-row sm:gap-0 gap-10 ">
+	<div class="flex flex-col justify-center gap-10 sm:flex-row sm:gap-0 ">
 		<div class=" flex w-full flex-col gap-4 sm:w-[28vw] ">
 			<InView yThreshold="0" let:isVisible>
 				<div class="relative">
@@ -25,7 +25,7 @@
 
 			<div class="h-[0.07rem] w-[30%] bg-textLight" />
 			<div class="pr-7 font-satoshi text-3xl font-thin text-bright ">Market research</div>
-			<div class="pr-7 font-satoshi font-thin text-textLight">
+			<div class="pr-7 font-satoshi text-lg font-thin text-textLight 2xl:text-2xl">
 				We help uncover valuable insights about your audience, competitors, and industry trends, to
 				drive your business forward with data-driven decisions.
 			</div>
@@ -46,7 +46,7 @@
 			</InView>
 			<div class="h-[0.07rem] w-[30%] bg-textLight" />
 			<div class="pr-7 font-satoshi text-3xl font-thin text-bright ">Branding and design</div>
-			<div class="pr-7 font-satoshi font-thin text-textLight">
+			<div class="pr-7 font-satoshi text-lg font-thin text-textLight  2xl:text-2xl">
 				Our design services help you leave a lasting impression with a brand tailored to showcase
 				your unique identity and captivate your audience.
 			</div>
@@ -67,7 +67,7 @@
 			</InView>
 			<div class="h-[0.07rem] w-[30%] bg-textLight" />
 			<div class="pr-7 font-satoshi text-3xl font-thin text-bright ">Advertising and promotion</div>
-			<div class="pr-7 font-satoshi font-thin text-textLight">
+			<div class="pr-7 font-satoshi text-lg font-thin text-textLight 2xl:text-2xl">
 				Maximize your reach with our comprehensive advertising services, designed to deliver the
 				right message to the right audience.
 			</div>

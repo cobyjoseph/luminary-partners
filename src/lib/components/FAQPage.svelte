@@ -15,7 +15,7 @@
 	console.log(data);
 </script>
 
-<div class="heightClass relative bg-base px-[8%] pb-6 ">
+<div class="heightClass relative bg-base px-[8%] 2xl:px-[14%] pb-6 ">
 	<InView yThreshold="0" let:isVisible>
 		{#if isVisible}
 			<div class="absolute bottom-0 right-0 z-0 h-[70vh] w-[70vh] overflow-hidden">

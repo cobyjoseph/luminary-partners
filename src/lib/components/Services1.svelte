@@ -87,7 +87,7 @@
 				style:transform={isVisible
 					? `translateY(${(scroll - 400) * speed}px)`
 					: `translateY(-400px)`}
-				class=" textClamp relative z-20 mb-2 flex px-[8%] font-satoshi font-extrabold text-black"
+				class=" textClamp relative z-20 mb-2 flex px-[8%] 2xl:px-[14%] font-satoshi font-extrabold text-black"
 			>
 				We are here to help you:
 			</div>
@@ -97,7 +97,7 @@
 					style:transform={isVisible
 						? `translateY(${(scroll - 400) * speed}px)`
 						: `translateY(-400px)`}
-					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold  text-bright"
+					class=" textClampSmall relative z-20 flex px-[8%] 2xl:px-[14%] font-satoshi font-semibold  text-bright"
 				>
 					find your market,
 				</div>
@@ -108,7 +108,7 @@
 					style:transform={isVisible
 						? `translateY(${(scroll - 400) * speed}px)`
 						: `translateY(-400px)`}
-					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold  text-bright"
+					class=" textClampSmall relative z-20 flex px-[8%] 2xl:px-[14%] font-satoshi font-semibold  text-bright"
 				>
 					tailor your message,
 				</div>
@@ -120,7 +120,7 @@
 					style:transform={isVisible
 						? `translateY(${(scroll - 400) * speed}px)`
 						: `translateY(-400px)`}
-					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold  text-bright"
+					class=" textClampSmall relative z-20 flex px-[8%] 2xl:px-[14%] font-satoshi font-semibold  text-bright"
 				>
 					and drive growth.
 				</div>

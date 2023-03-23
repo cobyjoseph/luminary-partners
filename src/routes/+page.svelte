@@ -30,7 +30,7 @@
 		<div class="backgroundPhoto absolute z-0 h-full w-full " />
 		<div class="absolute z-0 h-full w-full  bg-slate-900 opacity-80 " />
 
-		<div class="customHeight relative px-[8%]">
+		<div class="customHeight relative px-[8%] 2xl:px-[14%]">
 			<Menu />
 
 			<LandingPage />

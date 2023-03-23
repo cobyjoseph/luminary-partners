@@ -42,7 +42,7 @@
 			class="backgroundPhoto sticky top-0 flex h-full w-full flex-col items-center justify-center"
 		>
 			<div
-				class="justicy-center  flex flex-col items-center  gap-6 px-[8%] font-satoshi text-white"
+				class="justicy-center  flex flex-col items-center  gap-6 px-[8%] 2xl:px-[14%] font-satoshi text-white"
 			>
 				<div class="textClamp  z-20 flex  text-center font-extrabold">Cut through the noise</div>
 				<div class="textClampSmall z-20 text-center font-thin">

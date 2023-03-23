@@ -1,4 +1,4 @@
-<div id="contact" class="mt-[6rem] px-[8%]">
+<div id="contact" class="mt-[6rem] px-[8%] 2xl:px-[14%]">
 	<div class=" font-satoshi text-4xl font-thin text-bright  ">Get in touch.</div>
 	<div class="mt-[3rem] items-center  gap-[5rem] sm:grid sm:grid-cols-2">
 		<div class="  font-satoshi text-2xl font-thin text-textLight">
