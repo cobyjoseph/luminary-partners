@@ -3,9 +3,24 @@
 	import linkedIn from '$lib/assets/footer/linkedin-icon.svg';
 	import twitter from '$lib/assets/footer/twitter-icon.svg';
 	import logo from '$lib/assets/logo/luminary-partners-logo-v0.3.png';
+
+	import toast from 'svelte-french-toast';
+
+	function showToast() {
+		toast.success(
+			'This is a fictional solution from this fictional company. But thanks for clicking!'
+		);
+	}
+	function showToastLink() {
+		toast.success(
+			'This link goes nowhere because this company is made up. But thanks for clicking!'
+		);
+	}
 </script>
 
-<div class="mt-[5rem] w-full bg-brightDark px-[8%] 2xl:px-[14%] py-[2.5rem] font-satoshi text-white ">
+<div
+	class="mt-[5rem] w-full bg-brightDark px-[8%] py-[2.5rem] font-satoshi text-white 2xl:px-[14%] "
+>
 	<div class="grid grid-cols-2  gap-10 sm:grid sm:grid-cols-4  ">
 		<div class="flex items-start  justify-center gap-2 ">
 			<img src={logo} alt="logo" class="w-[2.5rem]" />
@@ -50,21 +65,38 @@
 		</div>
 		<div class="mx-auto flex flex-col justify-center  ">
 			<div class="mb-1 text-sm font-bold">Solutions</div>
-			<div class="text-sm font-thin hover:cursor-pointer hover:text-bright">
+			<div on:click={showToast} class="text-sm font-thin hover:cursor-pointer hover:text-bright">
 				For retail marketing
 			</div>
-			<div class="text-sm font-thin hover:cursor-pointer hover:text-bright">
+			<div on:click={showToast} class="text-sm font-thin hover:cursor-pointer hover:text-bright">
 				For employer branding
 			</div>
-			<div class="text-sm font-thin hover:cursor-pointer hover:text-bright">For corporate</div>
+			<div on:click={showToast} class="text-sm font-thin hover:cursor-pointer hover:text-bright">
+				For corporate
+			</div>
 		</div>
 		<div class="mx-auto flex flex-col justify-center ">
 			<div class="mb-1 text-sm font-bold">Company</div>
-			<div class="text-sm font-thin hover:cursor-pointer hover:text-bright">About</div>
-			<div class="text-sm font-thin hover:cursor-pointer hover:text-bright">Contact</div>
-			<div class="text-sm font-thin hover:cursor-pointer hover:text-bright">Careers</div>
+			<div
+				on:click={showToastLink}
+				class="text-sm font-thin hover:cursor-pointer hover:text-bright"
+			>
+				About
+			</div>
+			<div
+				on:click={showToastLink}
+				class="text-sm font-thin hover:cursor-pointer hover:text-bright"
+			>
+				Contact
+			</div>
+			<div
+				on:click={showToastLink}
+				class="text-sm font-thin hover:cursor-pointer hover:text-bright"
+			>
+				Careers
+			</div>
 		</div>
-		<div class=" hidden items-start gap-4 sm:flex">
+		<div on:click={showToastLink} class=" hidden items-start gap-4 sm:flex">
 			<img src={facebook} alt="facebook logo" class="w-8 hover:cursor-pointer" />
 			<img src={linkedIn} alt="linkedin logo" class=" w-8 hover:cursor-pointer" />
 			<img src={twitter} alt="twittre logo" class="w-8 hover:cursor-pointer" />

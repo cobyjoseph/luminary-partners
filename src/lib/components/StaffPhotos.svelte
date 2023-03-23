@@ -3,6 +3,11 @@
 	import photo2 from '$lib/assets/headshots/photo-2.png';
 	import photo3 from '$lib/assets/headshots/photo-3.png';
 	import photo4 from '$lib/assets/headshots/photo-4.png';
+	import toast from 'svelte-french-toast';
+
+	function showToast() {
+		toast.success('This is a fictional person at this fictional company. But thanks for clicking!');
+	}
 
 	let staffData = [
 		{
@@ -50,6 +55,7 @@
 				<div class="flex text-xl font-normal text-bright  ">{i.name}</div>
 				<div class=" flex font-thin text-textLight  ">{i.role}</div>
 				<div
+					on:click={showToast}
 					class="mt-2 flex items-center justify-center gap-1 rounded-md bg-bright px-4 pt-[0.3rem] pb-[0.4rem] text-center text-xs font-thin text-white hover:cursor-pointer hover:bg-brightDark"
 				>
 					<div class="flex">See bio</div>
