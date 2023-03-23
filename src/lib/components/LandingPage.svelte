@@ -83,12 +83,16 @@
 {/if} -->
 
 {#if mountAnimations}
-	<div class="relative z-20 mt-[10vh] flex flex-col items-center justify-center  font-satoshi">
-		<div class="flex max-w-[40rem] flex-col items-center gap-12 text-center  text-white ">
+	<div
+		class="relative z-20 mt-[13vh] flex flex-col items-center justify-center font-satoshi xl:mt-[17vh]  2xl:mt-[15vh]"
+	>
+		<div
+			class="flex max-w-[40rem] flex-col  items-center  gap-12 text-center text-white lg:max-w-[50rem] xl:max-w-[55rem]  2xl:max-w-[60rem] "
+		>
 			<div class="textSmallClamp flex flex-col  items-center justify-center gap-7  ">
 				<div
 					in:fly={{ duration: 300, delay: 0, easing: sineInOut, y: 100 }}
-					class="textClamp font-satoshi font-extrabold leading-10  text-white  sm:px-[5vw]  "
+					class="textClamp font-satoshi font-extrabold leading-9 text-white sm:px-[5vw]  sm:leading-[2.8rem] lg:leading-[3.4rem] xl:leading-[3.7rem] 2xl:leading-[4.1rem]  "
 				>
 					Strategic marketing for innovative companies
 				</div>
@@ -145,11 +149,11 @@
 	}
 
 	.textClamp {
-		font-size: clamp(1.7rem, 2.5vw + 0.5rem, 3rem);
+		font-size: clamp(1.9rem, 2.9vw + 1rem, 4rem);
 	}
 
 	.textSmallClamp {
-		font-size: clamp(1rem, 0.8vw + 0.4rem, 2.5rem);
+		font-size: clamp(1rem, 1.2vw + 0.6rem, 2.5rem);
 		line-height: normal;
 	}
 
