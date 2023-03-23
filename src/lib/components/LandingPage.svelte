@@ -153,5 +153,25 @@
 		line-height: normal;
 	}
 
+	a:link {
+		text-decoration: none !important;
+		color: white !important;
+	}
+
+	a:visited {
+		text-decoration: none !important;
+		color: white !important;
+	}
+
+	a:hover {
+		text-decoration: none !important;
+		color: white !important;
+	}
+
+	a:active {
+		text-decoration: none !important;
+		color: white !important;
+	}
+
 	/* Picture modified from Rawpixel Ltd on Flickr / 2018. source: https://www.flickr.com/photos/byrawpixel/45739276632/ */
 </style>

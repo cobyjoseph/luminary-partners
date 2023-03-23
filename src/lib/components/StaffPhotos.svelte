@@ -43,7 +43,7 @@
 				<img
 					src={i.photoSRC}
 					alt="person headshot"
-					class="aboslute customTransition absolute bottom-0 h-[8rem] w-[8rem] -translate-y-1 scale-[130%] hover:-translate-y-3 hover:scale-[130%] hover:ease-in-out sm:h-[10rem] sm:w-[10rem]   "
+					class="aboslute customTransition absolute bottom-0 h-[8rem] w-[8rem] -translate-y-1 scale-[130%] hover:-translate-y-3 hover:scale-[130%] hover:cursor-pointer  hover:ease-in-out sm:h-[10rem] sm:w-[10rem]   "
 				/>
 			</div>
 			<div class="flex flex-col items-center ">

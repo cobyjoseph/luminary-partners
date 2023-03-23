@@ -58,23 +58,19 @@
 	<div class="flex gap-10 font-satoshi text-lg font-semibold">
 		<div class="  flex  gap-20   ">
 			<!-- this extra div is so that I can put the menu svg and the menu names in the same div that makes the justify-between work. But then they also need to be in separate divs so the titles can be hidden on small -->
-			<div class="hidden gap-14 lg:flex ">
+			<div class="hidden gap-14 lg:flex  ">
 				<a
 					href={'#services'}
-					class=" customUnderline   font-semibold"
+					class="fancy-link relative   "
 					on:click|preventDefault={scrollIntoView}>Services</a
 				>
 
-				<a
-					href={'#ourTeam'}
-					class=" customUnderline  font-semibold"
-					on:click|preventDefault={scrollIntoView}>Our team</a
+				<a href={'#ourTeam'} class="fancy-link relative" on:click|preventDefault={scrollIntoView}
+					>Our team</a
 				>
 
-				<a
-					href={'#contact'}
-					class=" customUnderline  font-semibold"
-					on:click|preventDefault={scrollIntoView}>Contact</a
+				<a href={'#contact'} class=" fancy-link  relative" on:click|preventDefault={scrollIntoView}
+					>Contact</a
 				>
 			</div>
 
@@ -118,25 +114,12 @@
 							class="frostedBox absolute top-7 right-0 z-[300] grid w-[14rem] grid-cols-1 gap-4 self-stretch p-6"
 							in:blur={{ duration: 300, easing: sineIn }}
 						>
-							<a
-								href={'#services'}
-								class=" underlineMenu   font-semibold  "
-								on:click|preventDefault={scrollIntoView}>Services</a
+							<a href={'#services'} class="   " on:click|preventDefault={scrollIntoView}>Services</a
 							>
 
-							<a
-								href={'#ourTeam'}
-								class=" underlineMenu  font-semibold"
-								on:click|preventDefault={scrollIntoView}
-								>Our team
-							</a>
+							<a href={'#ourTeam'} class=" " on:click|preventDefault={scrollIntoView}>Our team </a>
 
-							<a
-								href={'#contact'}
-								class=" underlineMenu  font-semibold"
-								on:click|preventDefault={scrollIntoView}
-								>Contact
-							</a>
+							<a href={'#contact'} class=" " on:click|preventDefault={scrollIntoView}>Contact </a>
 						</div>
 					</div>
 				{/if}
@@ -182,5 +165,25 @@
 		backdrop-filter: blur(8px);
 		-webkit-backdrop-filter: blur(8px);
 		border: 0.05rem solid rgba(255, 255, 255, 0.4);
+	}
+
+	a:link {
+		text-decoration: none !important;
+		color: white !important;
+	}
+
+	a:visited {
+		text-decoration: none !important;
+		color: white !important;
+	}
+
+	a:hover {
+		text-decoration: none !important;
+		color: white !important;
+	}
+
+	a:active {
+		text-decoration: none !important;
+		color: white !important;
 	}
 </style>
