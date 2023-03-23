@@ -2,13 +2,15 @@
 	import facebook from '$lib/assets/footer/facebook-icon.svg';
 	import linkedIn from '$lib/assets/footer/linkedin-icon.svg';
 	import twitter from '$lib/assets/footer/twitter-icon.svg';
+	import logo from '$lib/assets/logo/luminary-partners-logo-v0.3.png';
 </script>
 
-<div class="mt-[5rem] w-full bg-secondaryDark px-[8%] py-[2.5rem] font-satoshi text-white ">
+<div class="mt-[5rem] w-full bg-brightDark px-[8%] py-[2.5rem] font-satoshi text-white ">
 	<div class="grid grid-cols-2  gap-10 sm:grid sm:grid-cols-4  ">
 		<div class="flex items-start  justify-center gap-2 ">
-			<div class="flex w-[2.5rem] sm:w-[2.5rem]   ">
-				<svg
+			<img src={logo} alt="logo" class="w-[2.5rem]" />
+
+			<!-- <svg
 					width="100%"
 					height="100%"
 					viewBox="0 0 223 253"
@@ -34,8 +36,8 @@
 							</g>
 						</g>
 					</g>
-				</svg>
-			</div>
+				</svg> -->
+
 			<div class="  flex flex-col font-josefinSans font-bold   ">
 				<div class="flex text-white ">Luminary</div>
 				<div class=" flex text-white">Insights</div>

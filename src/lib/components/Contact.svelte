@@ -14,9 +14,9 @@
 			action="?/contactAction"
 		>
 			<div class=" flex flex-col">
-				<div class="text-sm font-bold text-secondaryDark ">NAME</div>
+				<div class="text-sm font-bold text-bright ">Name</div>
 				<input
-					class="mt-1 rounded-sm border border-b-bright    bg-secondaryDark bg-opacity-30 p-2"
+					class="mt-1 rounded-md border     bg-secondaryDark bg-opacity-20 p-2"
 					type="text"
 					name="name"
 					placeholder="Full name"
@@ -24,9 +24,9 @@
 				/>
 			</div>
 			<div class="flex flex-col">
-				<div class="text-sm font-bold  text-secondaryDark ">EMAIL</div>
+				<div class="text-sm font-bold  text-bright ">Email</div>
 				<input
-					class="mt-1 rounded-sm  border border-b-bright  bg-secondaryDark bg-opacity-30 p-2"
+					class="mt-1 rounded-md  border   bg-secondaryDark bg-opacity-20 p-2"
 					type="email"
 					name="email"
 					placeholder="Email"
@@ -35,11 +35,11 @@
 			</div>
 			<div class="flex w-full flex-col ">
 				<div class="">
-					<div class="text-sm font-bold text-secondaryDark ">MESSAGE</div>
+					<div class="text-sm font-bold text-bright ">Message</div>
 					<textarea
 						name="message"
 						rows="3"
-						class="mt-1 min-w-full rounded-sm  border border-b-bright   bg-secondaryDark bg-opacity-30 p-2"
+						class="mt-1 min-w-full rounded-md  border    bg-secondaryDark bg-opacity-20 p-2"
 						placeholder="Let us know how we can help."
 					/>
 				</div>
@@ -47,7 +47,7 @@
 			<div class="flex">
 				<button
 					type="submit"
-					class="mt-2 flex justify-center rounded-sm  bg-bright pr-5 pl-5 py-[0.5rem]  text-lg  font-semibold text-white "
+					class="mt-2 flex justify-center rounded-md  bg-bright py-[0.5rem] pr-5 pl-5  text-lg  font-semibold text-white "
 					>Send</button
 				>
 			</div>

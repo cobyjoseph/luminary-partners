@@ -51,7 +51,7 @@
 				</div>
 				<div class="z-20 flex justify-center">
 					<div
-						class="textSmallClamp  mt-2 flex items-center justify-center gap-1 rounded-sm bg-bright pr-5 pl-7 py-[0.7rem] font-bold text-white hover:bg-base hover:text-[#2155FF]  "
+						class="textSmallClamp  mt-2 flex items-center justify-center gap-1 rounded-md bg-bright py-[0.7rem] pr-5 pl-7 font-bold text-white hover:bg-base hover:text-[#2155FF]  "
 					>
 						<div class="flex">Let's talk</div>
 

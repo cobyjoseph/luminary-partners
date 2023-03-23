@@ -37,7 +37,7 @@
 				</div>
 
 				<div
-					class="textSmallClamp mt-2 flex  max-w-fit items-center justify-center gap-1 rounded-sm bg-base px-6 py-3 font-bold text-secondaryDark hover:bg-base hover:text-secondaryDark  "
+					class="textSmallClamp mt-2 flex  max-w-fit items-center justify-center gap-1 rounded-md bg-base px-6 py-3 font-bold text-secondaryDark hover:bg-base hover:text-secondaryDark  "
 				>
 					<div class="flex">Book a consultation</div>
 

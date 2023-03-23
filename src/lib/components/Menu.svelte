@@ -1,4 +1,6 @@
 <script lang="ts">
+	import logo from '$lib/assets/logo/luminary-partners-logo-v0.3.png';
+
 	function scrollIntoView({ target }) {
 		const element = document.querySelector(target.getAttribute('href'));
 		if (!element) return;
@@ -10,8 +12,8 @@
 
 <div class="flex items-center justify-between py-5 text-white ">
 	<div class="flex items-center gap-2">
-		<div class="flex w-[3rem] sm:w-[3rem]  ">
-			<svg
+		<img src={logo} alt="logo" class="w-[3rem]" />
+		<!-- <svg
 				width="100%"
 				height="100%"
 				viewBox="0 0 223 253"
@@ -37,8 +39,8 @@
 						</g>
 					</g>
 				</g>
-			</svg>
-		</div>
+			</svg> -->
+
 		<div class="mt-1 flex flex-col font-josefinSans text-xl font-bold sm:text-xl  ">
 			<div class="flex ">Luminary</div>
 			<div class="-mt-[0.4rem] flex">Insights</div>

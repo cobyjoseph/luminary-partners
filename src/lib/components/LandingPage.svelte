@@ -90,11 +90,11 @@
 				</div>
 				<div in:fly={{ duration: 300, delay: 150, easing: sineInOut, y: 100 }} class="flex">
 					<div
-						class="textSmallClamp mt-2 flex items-center justify-center gap-1 rounded-sm bg-bright pr-5 pl-7 py-[0.7rem] font-bold text-white hover:bg-base hover:text-[#2155FF]  "
+						class="textSmallClamp mt-2 flex items-center justify-center gap-1 rounded-md bg-bright px-6 py-[0.7rem] font-bold text-white hover:bg-base hover:text-[#2155FF]  "
 					>
 						<div class="flex">Learn More</div>
 
-						<svg
+						<!-- <svg
 							xmlns="http://www.w3.org/2000/svg"
 							fill="none"
 							viewBox="0 0 28 20"
@@ -107,7 +107,7 @@
 								stroke-linejoin="round"
 								d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5"
 							/>
-						</svg>
+						</svg> -->
 					</div>
 				</div>
 			</div>
