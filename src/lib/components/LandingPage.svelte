@@ -87,7 +87,7 @@
 		class="relative z-20 mt-[13vh] flex flex-col items-center justify-center font-satoshi xl:mt-[17vh]  2xl:mt-[15vh]"
 	>
 		<div
-			class="flex max-w-[40rem] flex-col  items-center  gap-12 text-center text-white lg:max-w-[50rem] xl:max-w-[55rem]  2xl:max-w-[60rem] "
+			class="flex max-w-[40rem] flex-col  items-center  gap-12 text-center text-white lg:max-w-[52rem] xl:max-w-[58rem]  2xl:max-w-[66rem] "
 		>
 			<div class="textSmallClamp flex flex-col  items-center justify-center gap-7  ">
 				<div
@@ -153,7 +153,7 @@
 	}
 
 	.textSmallClamp {
-		font-size: clamp(1rem, 1.2vw + 0.6rem, 2.5rem);
+		font-size: clamp(1rem, 1.2vw + 0.6rem, 2.2rem);
 		line-height: normal;
 	}
 
