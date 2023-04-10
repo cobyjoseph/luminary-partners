@@ -153,7 +153,7 @@
 	}
 
 	.textSmallClamp {
-		font-size: clamp(1rem, 1.2vw + 0.6rem, 2.2rem);
+		font-size: clamp(1rem, 1.2vw + 0.4rem, 1.5rem);
 		line-height: normal;
 	}
 
