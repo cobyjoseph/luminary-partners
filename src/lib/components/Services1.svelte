@@ -1,6 +1,4 @@
 <script lang="ts">
-	import bgLines from '$lib/assets/patterns/background-lines-v0.4.svg';
-	import bgLinesPortrait from '$lib/assets/patterns/background-lines-v0.8.svg';
 	import InView from '$lib/components/InView.svelte';
 	import { landingPageHeightInitial } from '$lib/stores/heightStore';
 	import { fly, blur } from 'svelte/transition';
@@ -87,7 +85,7 @@
 				style:transform={isVisible
 					? `translateY(${(scroll - 400) * speed}px)`
 					: `translateY(-400px)`}
-				class=" textClamp relative z-20 mb-2 flex px-[8%] 2xl:px-[14%] font-satoshi font-extrabold text-black"
+				class=" textClamp relative z-20 mb-2 flex px-[8%] font-satoshi font-extrabold text-black 2xl:px-[14%]"
 			>
 				We are here to help you:
 			</div>
@@ -97,7 +95,7 @@
 					style:transform={isVisible
 						? `translateY(${(scroll - 400) * speed}px)`
 						: `translateY(-400px)`}
-					class=" textClampSmall relative z-20 flex px-[8%] 2xl:px-[14%] font-satoshi font-semibold  text-bright"
+					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold text-bright  2xl:px-[14%]"
 				>
 					find your market,
 				</div>
@@ -108,7 +106,7 @@
 					style:transform={isVisible
 						? `translateY(${(scroll - 400) * speed}px)`
 						: `translateY(-400px)`}
-					class=" textClampSmall relative z-20 flex px-[8%] 2xl:px-[14%] font-satoshi font-semibold  text-bright"
+					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold text-bright  2xl:px-[14%]"
 				>
 					tailor your message,
 				</div>
@@ -120,7 +118,7 @@
 					style:transform={isVisible
 						? `translateY(${(scroll - 400) * speed}px)`
 						: `translateY(-400px)`}
-					class=" textClampSmall relative z-20 flex px-[8%] 2xl:px-[14%] font-satoshi font-semibold  text-bright"
+					class=" textClampSmall relative z-20 flex px-[8%] font-satoshi font-semibold text-bright  2xl:px-[14%]"
 				>
 					and drive growth.
 				</div>
