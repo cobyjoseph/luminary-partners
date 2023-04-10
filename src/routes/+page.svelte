@@ -55,10 +55,16 @@
 
 <style>
 	.backgroundPhoto {
-		background-image: url($lib/assets/bg-images/bg-image2-opt.webp);
+		background-image: url($lib/assets/bg-images/bg-image2.jpg);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+
+	@supports (background-image: url('test.webp')) {
+		.backgroundPhoto {
+			background-image: url($lib/assets/bg-images/bg-image2-opt.webp);
+		}
 	}
 
 	.customHeight {
