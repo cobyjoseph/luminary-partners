@@ -40,7 +40,7 @@
 		<!-- <Reports /> -->
 	</div>
 
-	<!-- <Services1 /> -->
+	<Services1 />
 
 	<Services2 />
 </div>
