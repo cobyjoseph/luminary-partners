@@ -71,7 +71,7 @@
 	}
 
 	.backgroundPhotoTexture {
-		background-image: url('$lib/assets/patterns/canvas-texture.png');
+		background-image: url('$lib/assets/patterns/canvas-texture-opt.webp');
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
