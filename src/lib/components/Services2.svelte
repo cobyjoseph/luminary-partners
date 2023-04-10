@@ -19,7 +19,13 @@
 							class="absolute h-full w-full bg-base"
 						/>
 					{/if}
-					<img transition:fly={{ duration: 500 }} src={img1} alt="" class=" bg-contain " />
+					<img
+						transition:fly={{ duration: 500 }}
+						src={img1}
+						alt=""
+						class=" bg-contain "
+						loading="lazy"
+					/>
 				</div>
 			</InView>
 
@@ -41,7 +47,7 @@
 							class="absolute h-full w-full bg-base"
 						/>
 					{/if}
-					<img src={img2} alt="" class=" bg-contain " />
+					<img src={img2} alt="" class=" bg-contain " loading="lazy" />
 				</div>
 			</InView>
 			<div class="h-[0.07rem] w-[30%] bg-textLight" />
@@ -62,7 +68,7 @@
 							class="absolute h-full w-full bg-base"
 						/>
 					{/if}
-					<img src={img3} alt="" class=" bg-contain " />
+					<img src={img3} alt="" class=" bg-contain " loading="lazy" />
 				</div>
 			</InView>
 			<div class="h-[0.07rem] w-[30%] bg-textLight" />
