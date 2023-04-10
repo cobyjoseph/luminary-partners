@@ -1,8 +1,8 @@
 <script>
-	import photo1 from '$lib/assets/headshots/photo-1.png';
-	import photo2 from '$lib/assets/headshots/photo-2.png';
-	import photo3 from '$lib/assets/headshots/photo-3.png';
-	import photo4 from '$lib/assets/headshots/photo-4.png';
+	import photo1 from '$lib/assets/headshots/photo-1-opt.webp';
+	import photo2 from '$lib/assets/headshots/photo-2-opt.webp';
+	import photo3 from '$lib/assets/headshots/photo-3-opt.webp';
+	import photo4 from '$lib/assets/headshots/photo-4-opt.webp';
 	import toast from 'svelte-french-toast';
 
 	function showToast() {
