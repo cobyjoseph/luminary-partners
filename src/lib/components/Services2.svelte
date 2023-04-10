@@ -1,7 +1,7 @@
 <script>
-	import img1 from '$lib/assets/services/MarketResearch.jpg';
-	import img2 from '$lib/assets/services/Branding.jpg';
-	import img3 from '$lib/assets/services/Advertising.jpg';
+	import img1 from '$lib/assets/services/MarketResearch-opt.webp';
+	import img2 from '$lib/assets/services/Branding-opt.webp';
+	import img3 from '$lib/assets/services/Advertising-opt.webp';
 	import InView from '$lib/components/InView.svelte';
 	import { slide, fly, scale } from 'svelte/transition';
 
