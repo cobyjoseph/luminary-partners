@@ -55,7 +55,7 @@
 
 <style>
 	.backgroundPhoto {
-		background-image: url($lib/assets/bg-images/bg-image2.jpg);
+		background-image: url($lib/assets/bg-images/bg-image2-opt.webp);
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
