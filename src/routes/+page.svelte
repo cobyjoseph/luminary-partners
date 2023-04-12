@@ -12,6 +12,32 @@
 	import OurTeam from '$lib/components/OurTeam.svelte';
 	import Contact from '$lib/components/Contact.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import { onMount } from 'svelte';
+
+	function smoothScrollTo(targetPosition, duration) {
+		const startPosition = window.pageYOffset;
+		const distance = targetPosition - startPosition;
+		const startTime = performance.now();
+
+		function animation(currentTime) {
+			const timeElapsed = currentTime - startTime;
+			const progress = Math.min(timeElapsed / duration, 1);
+			const easeOutQuad = (t) => 1 - (1 - t) * (1 - t); // This is an ease-out quadratic easing function
+
+			window.scrollTo(0, startPosition + distance * easeOutQuad(progress));
+
+			if (timeElapsed < duration) {
+				requestAnimationFrame(animation);
+			}
+		}
+
+		requestAnimationFrame(animation);
+	}
+	onMount(() => {
+		setTimeout(() => {
+			smoothScrollTo(4800, 13000); // Adjust the target position and duration as needed
+		}, 500);
+	});
 </script>
 
 <svelte:head>
@@ -39,7 +65,7 @@
 
 		<!-- <Reports /> -->
 	</div>
-
+	``
 	<Services1 />
 
 	<Services2 />
