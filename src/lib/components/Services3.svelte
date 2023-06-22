@@ -87,7 +87,6 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-		
 	}
 
 	.backgroundPhotoMask {
@@ -103,8 +102,8 @@
 	}
 
 	.tallerHeightClass {
-		min-height: 300vh;
-		min-height: 300svh;
+		min-height: 200vh;
+		min-height: 200svh;
 	}
 
 	.textSmallClamp {

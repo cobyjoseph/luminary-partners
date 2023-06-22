@@ -45,12 +45,14 @@
 				<div
 					class="backgroundPhotoTexture absolute bottom-0 h-[8rem] w-[8rem]   rounded-t-full sm:h-[10rem] sm:w-[10rem]  "
 				/>
-				<img
-					src={i.photoSRC}
-					loading="lazy"
-					alt="person headshot"
-					class="aboslute customTransition absolute bottom-0 h-[8rem] w-[8rem] -translate-y-1 scale-[130%] hover:-translate-y-3 hover:scale-[130%] hover:cursor-pointer  hover:ease-in-out sm:h-[10rem] sm:w-[10rem]   "
-				/>
+				<div class="container">
+					<img
+						src={i.photoSRC}
+						loading="lazy"
+						alt="person headshot"
+						class="aboslute customTransition absolute bottom-0 h-[8rem] w-[8rem] -translate-y-1 scale-[130%] hover:-translate-y-3 hover:scale-[130%] hover:cursor-pointer  hover:ease-in-out sm:h-[10rem] sm:w-[10rem]   "
+					/>
+				</div>
 			</div>
 			<div class="flex flex-col items-center ">
 				<div class="flex text-xl font-normal text-bright  ">{i.name}</div>
@@ -76,5 +78,18 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+	}
+
+	.container {
+		width: 8rem;
+		height: 8rem;
+		overflow: hidden;
+		border-radius: 50%;
+	}
+
+	.image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
 	}
 </style>

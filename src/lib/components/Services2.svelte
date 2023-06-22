@@ -90,7 +90,7 @@
 	}
 
 	.heightClass {
-		min-height: 100vh;
-		min-height: 100svh;
+		min-height: 60vh;
+		min-height: 60svh;
 	}
 </style>
