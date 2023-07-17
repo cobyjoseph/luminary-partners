@@ -45,6 +45,12 @@
 		href="https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,301,701,300,501,401,901,400&display=swap"
 		rel="stylesheet"
 	/>
+
+	<title>Luminary Partners consulting</title>
+	<meta
+		name="description"
+		content="Luminary Partners is a boutique consulting firm here for your strategic marketing needs"
+	/>
 </svelte:head>
 
 <div
